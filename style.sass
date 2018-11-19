@@ -1,44 +1,30 @@
 @import "_header.sass"
 @import "_footer.sass"
+@import "_catalog.sass"
+@import "_checkbox.sass"
+@import "shoping_cart"
+@import "var"
 
 ul li
   list-style-type: none
-
 
 .container-items
   display: flex
   justify-content: center
 
-
-
 .container-items-title
   text-align: center
   margin-bottom: 63px
 
-
-
-
-.item_block
-  display: flex
-  flex-direction: column
-  width: 261px
-  margin-right: 20px
-  margin-bottom: 60px
-  position: relative
-
-
 .item_span
   padding-bottom: 21px
-  color: #f16d7f
+  color: $main_color
   font-weight: 700
-
 
 .block_add
   position: relative
   display: flex
   justify-content: center
-
-
 
 .block_add_hover_text
   border: solid 1px white
@@ -46,11 +32,8 @@ ul li
   color: white
   display: flex
 
-
-
 .add_img
   padding-right: 8px
-
 
 .add_item
   position: absolute
@@ -58,29 +41,19 @@ ul li
   justify-content: center
   top: 94px
 
-
-
-.item_block:hover .item_img
-  filter: brightness(50%)
-
-
 .item_block:last-of-type
   margin-right: 0
-
 
 .item_block:hover .add_item
   display: block
   z-index: 1
 
-
 .item_block:hover
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
-
 
 .block_add_hover_a
   display: block
   border: solid 2px white
-
 
 .container-sale
   display: flex
@@ -88,14 +61,11 @@ ul li
   height: 529px
   margin-bottom: 97px
 
-
 .container_sale_block
   position: relative
 
-
 .white
   color: white
-
 
 .sale_block_text
   position: absolute
@@ -109,16 +79,13 @@ ul li
   text-transform: uppercase
   letter-spacing: 1.5px
 
-
 .sale_text_l1
-  color: #f16d7f
+  color: $main_color
   font-size: 50px
   letter-spacing: 0.9px
 
-
 .sale_text_l2
   font-size: 32px
-
 
 .sale_block_desc_text
   display: flex
@@ -128,20 +95,12 @@ ul li
   margin-bottom: 48px
   color: white
 
-
 .sale_block_desc
   background-color: #222224
   width: 373px
 
-
-.item_text
-  padding-top: 20px
-  padding-left: 14px
-
-
 body
   font-family: Lato, sans-serif
-
 
 .sale_desc_title
   color: #fbfbfb
@@ -151,15 +110,12 @@ body
   margin-bottom: 17px
   letter-spacing: 0.5px
 
-
 .sale_description
   display: flex
   flex-direction: column
 
-
 .sale_description_img
   margin-right: 30px
-
 
 .sale_block_desc_text
   color: #fbfbfb
@@ -170,7 +126,6 @@ body
 
   letter-spacing: 0.35px
 
-
 .item_title h2
   color: #222222
   font-family: Lato
@@ -179,7 +134,6 @@ body
   line-height: 54px
   margin: 100px 0 0
   letter-spacing: 0.75px
-
 
 .item_title span
 
@@ -190,47 +144,27 @@ body
 
   letter-spacing: 0.35px
 
-
-
-
-
-
 .logo_img
   margin-right: 10px
 
-
-
-
 .row-item
-  width: 1140px
+  width: $main_width
   display: flex
   flex-wrap: wrap
-
-
-.row-catalog-item
-  width: 851px
-  display: flex
-  flex-wrap: wrap
-
 
 .row-button
   display: flex
   justify-content: center
   margin: 79px 113px
 
-
-
 a, a:hover, a:visited
   text-decoration: none
   color: initial
-
-
 
 .container_category
   display: flex
   justify-content: center
   margin-top: 100px
-
 
 .container-banner
   height: 665px
@@ -239,21 +173,17 @@ a, a:hover, a:visited
   display: flex
   justify-content: center
 
-
 .banner
-  width: 1140px
+  width: $main_width
   display: flex
   align-items: center
   justify-content: space-between
-
 
 .banner_text
 
   padding-left: 12px
   line-height: 45px
-  border-left: solid #f16d7f 12px
-
-
+  border-left: solid $main_color 12px
 
 .banner_text_l1
   color: #222222
@@ -263,7 +193,6 @@ a, a:hover, a:visited
   text-transform: uppercase
   font-family: Lato-Black, sans-serif
 
-
 .banner_text_l2
   font-family: Lato-Black, sans-serif
   font-weight: 600
@@ -271,25 +200,21 @@ a, a:hover, a:visited
   letter-spacing: 1.5px
   line-height: 33px
 
-
 .banner_text_span
-  color: #f16d7f
+  color: $main_color
   font-family: Lato-Black, sans-serif
   font-size: 40px
   letter-spacing: 1.5px
 
-
 .category_coll
   display: flex
   flex-direction: column
-
 
 .category_block_acces
   width: 560px
   height: 261px
   display: flex
   background: url('img/acces.jpg') #dadad2 no-repeat right
-
 
 .block_man_text
   width: 160px
@@ -309,13 +234,11 @@ a, a:hover, a:visited
   margin-top: 26px
   padding-left: 19px
 
-
 .man_text_span
-  color: #f16d7f
+  color: $main_color
   font-size: 30px
   letter-spacing: 0.75px
   font-weight: 600
-
 
 .block_woman_text
 
@@ -334,20 +257,16 @@ a, a:hover, a:visited
   margin-top: 26px
   padding-left: 19px
 
-
 .category_block_woman, .category_block_man, .block_kids_text
   position: relative
-
 
 .category_block_woman, .category_block_man
   margin-bottom: 20px
 
-
 .woman_text_span
-  color: #f16d7f
+  color: $main_color
   font-size: 30px
   letter-spacing: 0.75px
-
 
 .block_acces_text
   color: #222222
@@ -364,13 +283,10 @@ a, a:hover, a:visited
   padding: 16px 18px
   margin-top: 20px
 
-
-
 .acces_text_span
-  color: #f16d7f
+  color: $main_color
   font-size: 30px
   letter-spacing: 0.75px
-
 
 .block_kids_text
   color: #222222
@@ -388,17 +304,13 @@ a, a:hover, a:visited
   margin-top: 20px
   padding-left: 19px
 
-
 .kids_text_span
-  color: #f16d7f
+  color: $main_color
   font-size: 30px
   letter-spacing: 0.75px
 
-
 .first_category_coll
   padding-right: 20px
-
-
 
 .container-response
   background: url("img/response.jpg") no-repeat
@@ -408,23 +320,16 @@ a, a:hover, a:visited
   display: flex
   justify-content: center
 
-
 .response_block
-  width: 1140px
+  width: $main_width
   height: 100%
   display: flex
   align-items: center
   justify-content: space-between
 
-
 .response_block_left
   width: 38%
   display: flex
-
-
-.response_block_right
-
-
 
 .response_text
   width: 386px
@@ -437,12 +342,11 @@ a, a:hover, a:visited
   padding-left: 28px
   letter-spacing: 0.4px
 
-
 .response_text_span
   display: flex
   flex-direction: column
   padding-top: 19px
-  color: #f16d7f
+  color: $main_color
   font-family: Lato
   font-size: 16px
   font-weight: 700
@@ -450,7 +354,6 @@ a, a:hover, a:visited
   font-family: "Lato - Bold"
   letter-spacing: 0.4px
   line-height: 26px
-
 
 .response_text_sign
   color: #222224
@@ -460,48 +363,25 @@ a, a:hover, a:visited
   letter-spacing: 0.3px
   line-height: 14px
 
-
 .response_plate
   width: 38px
   height: 4px
   background-color: #d6d6d6
   margin-right: 13px
 
-
 .response_control
   display: flex
   margin-top: 41px
 
-
 .response_plate_active
-  background-color: #f16d7f
+  background-color: $main_color
   width: 38px
   height: 4px
-
-
 
 .response-separator
   width: 1px
   height: 100%
   background-color: #ffffff
-
-
-footer
-  display: flex
-  align-items: center
-  flex-direction: column
-
-
-
-
-
-
-
-
-
-
-
-
 
 .subscrible_title
   color: #222224
@@ -515,7 +395,6 @@ footer
   text-align: center
   padding-bottom: 35px
 
-
 .subscrible_title span
   font-size: 14px
 
@@ -524,53 +403,17 @@ footer
   letter-spacing: 0.35px
   line-height: 24px
 
-
-
-
-details
-  width: 243px
-  margin-bottom: 15px
-
-
-.category_list_item
-  color: #6f6e6e
-  font-family: Lato
-  font-size: 14px
-  font-weight: 400
-  line-height: 33px
-
-
-summary
-  height: 37px
-  border-left: 6px solid #ef5b70
-  padding-left: 30px
-  line-height: 37px
-  color: #ef5b70
-  font-family: Lato
-  font-size: 14px
-  font-weight: 900
-  text-transform: uppercase
-  display: block
-
-
-
 summary::-webkit-details-marker
   display: none
-
 
 summary::after
   content: '⏷'
   padding-left: 100px
   color: #636363
 
-
 details[open] > summary::after
   content: '⏶'
   color: #ef5b70
-
-
-
-
 
 .subscrible_input
   border-top-right-radius: 0
@@ -584,45 +427,18 @@ details[open] > summary::after
   padding: 22px
   border: 1px solid #e1e1e1
 
-
 .subscrible_button
   border-top-right-radius: 23px
   border-top-left-radius: 0
   border-bottom-right-radius: 23px
   border-bottom-left-radius: 0
-  background-color: #f16d7f
+  background-color: $main_color
   height: 47px
   width: 104px
   position: relative
   right: 10px
   color: white
-  border: 1px solid #f16d7f
-
-
-.catalog-land-block
-  width: 100%
-  height: 148px
-  background-color: #f8f3f4
-  margin-top: 51px
-  display: flex
-  justify-content: center
-
-
-.container-land-block
-  width: 1140px
-  display: flex
-  justify-content: space-between
-  align-items: center
-
-
-.catalog_land_title
-  color: #f16d7f
-  font-family: Lato
-  font-size: 24px
-  font-weight: 900
-  line-height: 20px
-  text-transform: uppercase
-
+  border: 1px solid $main_color
 
 .breadcrumbs
   line-height: 20px
@@ -632,142 +448,19 @@ details[open] > summary::after
   font-family: Lato
   font-weight: 300
 
-
-
 .breadcrumbs_active
-  color: #f16d7f
+  color: $main_color
   font-size: 14px
   font-weight: 700
   font-family: Lato
-
-
-.advantage_container
-  display: flex
-  justify-content: center
-  height: 341px
-  background-color: #222224
-
-
-.advantage_block
-  display: flex
-  width: 1140px
-  justify-content: space-between
-
-
-.advantage_item
-  width: 309px
-  display: flex
-  justify-content: center
-  flex-direction: column
-  align-content: center
-  align-items: center
-
-
-.advantage_item h4
-  color: #fbfbfb
-  font-family: Lato
-  font-size: 20px
-  font-weight: 700
-
-  letter-spacing: 0.5px
-
-
-.advantage_item span
-  color: #fbfbfb
-  font-family: Lato
-  font-size: 14px
-  font-weight: 300
-  line-height: 23.95px
-
-  letter-spacing: 0.35px
-
-
-.container-catalog-product
-  display: flex
-  justify-content: center
-
-
-.block_product
-  width: 1140px
-
-
-.catalog-section
-  display: flex
-  justify-content: center
-
-
-.catalog-container
-  width: 1140px
-  display: flex
-  justify-content: space-between
-
-
-
-.catalog-right
-  width: 849px
-
-
-.catalog-section-product
-  width: 849px
-  display: flex
-  justify-content: space-between
-
-
-.catalog_range_price
-  display: flex
-  justify-content: space-between
-
-
-.filter-title
-  color: #6f6e6e
-  font-family: Lato
-  font-size: 14px
-  font-weight: 700
-  line-height: 20px
-  text-transform: uppercase
-
-
-.filter_var_item
-  color: #6f6e6e
-  font-family: Lato
-  font-size: 14px
-  font-weight: 400
-  line-height: 26px
-
+  a
+    color: $main_color
 
 .filter_separator
   border-left: 1px solid #dfdfdf
 
-
-.catalog-date-pick
-  background-color: #f3f3f3
-  height: 50px
-  margin-bottom: 48px
-  margin-top: 41px
-
-
-.pagination_item
-  width: 261px
-  height: 44px
-  border-radius: 3px
-  border: 1px solid #ebebeb
-  background-color: #ffffff
-  line-height: 44px
-  display: flex
-  justify-content: space-around
-
-
-.pagination_no_active
-  color: #c4c4c4
-
-
-.pagination_active
-  color: #ef5b70
-
-
 .white
   color: white
-
 
 .btn_empty
   width: 150px
@@ -781,58 +474,4 @@ details[open] > summary::after
   font-weight: bold
   font-size: 16px
 
-
-.row-pagination
-  margin-bottom: 110px
-  display: flex
-  justify-content: space-between
-
-
-/*checkbox style*/
-/*.checkbox */
-    /*position: absolute*/
-    /*z-index: -1*/
-    /*opacity: 0*/
-    /*margin: 10px 0 0 20px*/
-/**/
-/*.checkbox + label */
-    /*position: relative*/
-    /*padding: 0 0 0 60px*/
-    /*cursor: pointer*/
-/**/
-/*.checkbox + label:before */
-    /*content: ''*/
-    /*position: absolute*/
-    /*top: -4px*/
-    /*left: 0*/
-    /*width: 50px*/
-    /*height: 26px*/
-    /*border-radius: 13px*/
-    /*background: #CDD1DA*/
-    /*box-shadow: inset 0 2px 3px rgba(0,0,0,.2)*/
-    /*transition: .2s*/
-/**/
-/*.checkbox + label:after */
-    /*content: ''*/
-    /*position: absolute*/
-    /*top: -2px*/
-    /*left: 2px*/
-    /*width: 22px*/
-    /*height: 22px*/
-    /*border-radius: 10px*/
-    /*background: #FFF*/
-    /*box-shadow: 0 2px 5px rgba(0,0,0,.3)*/
-    /*transition: .2s*/
-/**/
-/*.checkbox:checked + label:before */
-    /*background: #9FD468*/
-/**/
-/*.checkbox:checked + label:after */
-    /*left: 26px*/
-/**/
-/*.checkbox:focus + label:before */
-    /*box-shadow: inset 0 2px 3px rgba(0,0,0,.2), 0 0 0 3px rgba(255,255,0,.7)*/
-/**/
-
-/*checkbox style end*/
 
