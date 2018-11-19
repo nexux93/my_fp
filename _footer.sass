@@ -6,8 +6,7 @@ footer
 
 .container-footer
   width: 1140px
-  display: flex
-  justify-content: space-between
+  @extend .flex-sp-between
   margin-top: 109px
   margin-bottom: 89px
 
@@ -51,15 +50,13 @@ footer
   font-size: 16px
   font-weight: 400
   letter-spacing: 0.4px
-  letter-spacing: 0.4px
   line-height: 42px
 
 .footer_footer
   height: 79px
   background-color: #e6e6e6
   width: 100%
-  display: flex
-  justify-content: center
+  @extend .flex-center
 
 .footer_footer_text
   color: #7a7a7a
@@ -67,14 +64,12 @@ footer
   font-size: 16px
   font-weight: 400
   line-height: 42px
-
   letter-spacing: 0.4px
 
 .container-ff
   width: 1140px
-  display: flex
+  @extend .flex-sp-between
   align-items: center
-  justify-content: space-between
 
 .share_block
   display: flex

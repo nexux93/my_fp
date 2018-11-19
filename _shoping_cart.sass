@@ -7,8 +7,7 @@
 
 .select_product_title
   width: 1137px
-  display: flex
-  justify-content: space-between
+  @extend .flex-sp-between
   margin-top: 98px
   border-bottom: 1px solid #eaeaea
   padding-bottom: 20px
@@ -29,8 +28,7 @@
   display: flex
 
 .product_list_item_right
-  display: flex
-  justify-content: space-between
+  @extend .flex-sp-between
   height: 115px
   line-height: 115px
   width: $description_block_width
@@ -42,8 +40,7 @@
   background-color: #ffffff
 
 .product_list_item
-  display: flex
-  justify-content: space-between
+  @extend .flex-sp-between
   border-bottom: 1px solid #eaeaea
   margin-bottom: 25px
   padding-bottom: 25px
@@ -57,22 +54,45 @@
 .product_btn_clear
   width: 235px
   height: 50px
+  display: block
   border: 1px solid #eaeaea
+  @extend .line-he
   background-color: #ffffff
-
-.container_row_button
-  display: flex
-  width: $main_width
 
 .product_btn_continue
   width: 225px
+  @extend .line-he
+  display: block
   height: 50px
   border: 1px solid #eaeaea
   background-color: #ffffff
 
+.product_btn_continue, .product_btn_clear
+  color: #4a4a4a
+  font-family: Lato
+  font-size: 14px
+  font-weight: 800
+  text-transform: uppercase
+
+.container_row_button
+  @extend .flex-center
+  margin-top: 40px
+  margin-bottom: 63px
+
+.container_delivery
+  @extend .flex-center
+  margin-bottom: 80px
+
+.delivery_block
+  width: $main_width
+  @extend .flex-sp-between
+
+.container_button
+  width: $main_width
+  @extend .flex-sp-between
+
 .product_title_right
-  display: flex
-  justify-content: space-between
+  @extend .flex-sp-between
 
 .product_title_item
   margin-right: 53px
@@ -81,9 +101,8 @@
   margin-right: 0
 
 .product_list_item_description
-  display: flex
+  @extend .flex-center
   flex-direction: column
-  justify-content: center
 
 .product_specification
   color: #6f6e6e
@@ -104,3 +123,38 @@
   color: #575757
   font-weight: 300
 
+.delivery_title
+  color: #222222
+  font-family: Lato
+  font-size: 16px
+  font-weight: 700
+  text-transform: uppercase
+
+.total_price
+  width: 360px
+  height: 214px
+  @extend .delivery_width
+  background-color: #f5f3f3
+
+.coupon_item
+  display: flex
+  flex-direction: column
+  @extend .delivery_width
+
+.delivery_input
+  width: 355px
+  height: 45px
+  border: 1px solid #eaeaea
+  background-color: #ffffff
+  margin-bottom: 20px
+  padding: 16px
+  box-sizing: border-box
+
+.delivery_item
+  display: flex
+  flex-direction: column
+  @extend .delivery_width
+
+.delivery_form
+  display: flex
+  flex-direction: column

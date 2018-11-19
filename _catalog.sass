@@ -1,6 +1,5 @@
 .container-catalog-product
-  display: flex
-  justify-content: center
+  @extend .flex-center
 
 .block_product
   width: 1140px
@@ -10,13 +9,11 @@
   height: 148px
   background-color: #f8f3f4
   margin-top: 51px
-  display: flex
-  justify-content: center
+  @extend .flex-center
 
 .container-land-block
   width: 1140px
-  display: flex
-  justify-content: space-between
+  @extend .flex-sp-between
   align-items: center
 
 .catalog_land_title
@@ -34,8 +31,7 @@
 .catalog-container
   margin-top: 71px
   width: 1140px
-  display: flex
-  justify-content: space-between
+  @extend .flex-sp-between
 
 .catalog-right
   width: 849px
@@ -65,8 +61,7 @@ summary
 
 .catalog-section-product
   width: 849px
-  display: flex
-  justify-content: space-between
+  @extend .flex-sp-between
 
 .filter-title
   color: #6f6e6e
@@ -88,8 +83,7 @@ summary
 .filter_var_item:last-of-type
   border-right: none
 .catalog_range_price
-  display: flex
-  justify-content: space-between
+  @extend .flex-sp-between
 
 .catalog-date-pick
   background-color: #f3f3f3
@@ -131,8 +125,7 @@ summary
 
 .row-pagination
   margin-bottom: 110px
-  display: flex
-  justify-content: space-between
+  @extend .flex-sp-between
 
 .pagination_item
   width: 261px
@@ -151,20 +144,17 @@ summary
   color: #ef5b70
 
 .advantage_container
-  display: flex
-  justify-content: center
+  @extend .flex-center
   height: 341px
   background-color: #222224
 
 .advantage_block
-  display: flex
   width: 1140px
-  justify-content: space-between
+  @extend .flex-sp-between
 
 .advantage_item
   width: 309px
-  display: flex
-  justify-content: center
+  @extend .flex-center
   flex-direction: column
   align-content: center
   align-items: center
@@ -183,7 +173,6 @@ summary
   font-size: 14px
   font-weight: 300
   line-height: 23.95px
-
   letter-spacing: 0.35px
 
 .filter-var

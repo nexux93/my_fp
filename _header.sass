@@ -7,19 +7,15 @@ header
 .container-header
   width: 1140px
   margin: 0 auto
-  display: flex
-  justify-content: space-between
+  @extend .flex-sp-between
   align-items: center
   height: 100px
 
 .header_left
-  display: flex
-  align-items: center
-
+  @extend .flex-center
 
 .header-right
-  display: flex
-  align-items: center
+  @extend .flex-center
 
 .brand_name
   color: #222222
@@ -31,7 +27,6 @@ header
   align-items: center
   letter-spacing: 0.68px
   text-decoration: none
-
 
 .brand-d
   color: #f16d7f
@@ -46,8 +41,7 @@ header
 .btn_browse
   width: 90px
   height: 39px
-  display: flex
-  justify-content: center
+  @extend .flex-center
   color: #222222
   line-height: 41px
   border-radius: 3px 0 0 3px
@@ -65,11 +59,8 @@ header
 .caret
   padding-left: 5px
 
-
 .caret img
   padding-bottom: 1px
-
-
 
 .search_input
   width: 320px
@@ -78,7 +69,6 @@ header
   background-color: #ffffff
   box-sizing: border-box
   padding: 18px
-
 
 .search_btn
   width: 36px
@@ -105,17 +95,13 @@ header
   padding: 5px 17px
   border-radius: 3px
 
-
 .nav_back
   height: 51px
   background-color: #ffffff
 
-
-
 .menu
   list-style-type: none
-  display: flex
-  justify-content: center
+  @extend .flex-center
 
 .menu_list
   padding: 0 20px
@@ -140,12 +126,8 @@ header
   border: solid 1px #e8e8e8
   display: none
 
-
 .mega_menu_link:hover .mega_menu_container
   display: block
-
-
-
 
 .mega_menu_container::before
   content: ""
@@ -160,14 +142,12 @@ header
   border-left: 1px solid #e8e8e8
   border-top: 1px solid #e8e8e8
 
-
 .mega_container_inside
   padding: 25px
   display: flex
 
 .mega_menu_column
   margin-right: 46px
-
 
 .mega_menu_column:last-of-type
   margin-right: 0
@@ -179,12 +159,11 @@ header
   font-weight: 700
   line-height: 32px
   text-transform: uppercase
-  border-bottom: 1px solid#e8e8e8
+  border-bottom: 1px solid #e8e8e8
   padding-bottom: 5px
   margin-bottom: 5px
   width: 235px
   letter-spacing: 0.35px
-
 
 .Mega_menu_column_list
   color: #646464
@@ -195,11 +174,8 @@ header
   padding-inline-start: 0
   letter-spacing: 0.35px
 
-
 .m_menu_column_2
   padding-top: 12px
-
-
 
 .mega_menu_video
   padding-top: 22px

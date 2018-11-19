@@ -9,8 +9,7 @@ ul li
   list-style-type: none
 
 .container-items
-  display: flex
-  justify-content: center
+  @extend .flex-center
 
 .container-items-title
   text-align: center
@@ -23,8 +22,7 @@ ul li
 
 .block_add
   position: relative
-  display: flex
-  justify-content: center
+  @extend .flex-center
 
 .block_add_hover_text
   border: solid 1px white
@@ -56,8 +54,7 @@ ul li
   border: solid 2px white
 
 .container-sale
-  display: flex
-  justify-content: center
+  @extend .flex-center
   height: 529px
   margin-bottom: 97px
 
@@ -153,8 +150,7 @@ body
   flex-wrap: wrap
 
 .row-button
-  display: flex
-  justify-content: center
+  @extend .flex-center
   margin: 79px 113px
 
 a, a:hover, a:visited
@@ -162,22 +158,19 @@ a, a:hover, a:visited
   color: initial
 
 .container_category
-  display: flex
-  justify-content: center
+  @extend .flex-center
   margin-top: 100px
 
 .container-banner
   height: 665px
   background-color: #e8e8e8
   margin-top: 50px
-  display: flex
-  justify-content: center
+  @extend .flex-center
 
 .banner
   width: $main_width
-  display: flex
+  @extend .flex-sp-between
   align-items: center
-  justify-content: space-between
 
 .banner_text
 
@@ -228,9 +221,8 @@ a, a:hover, a:visited
 
   letter-spacing: 0.45px
 
-  display: flex
+  @extend .flex-center
   flex-direction: column
-  justify-content: center
   margin-top: 26px
   padding-left: 19px
 
@@ -251,9 +243,8 @@ a, a:hover, a:visited
   width: 153px
   height: 82px
   background-color: #ffffff
-  display: flex
+  @extend .flex-center
   flex-direction: column
-  justify-content: center
   margin-top: 26px
   padding-left: 19px
 
@@ -277,9 +268,8 @@ a, a:hover, a:visited
   height: 65px
   background-color: #ffffff
   letter-spacing: 0.45px
-  display: flex
+  @extend .flex-center
   flex-direction: column
-  justify-content: center
   padding: 16px 18px
   margin-top: 20px
 
@@ -298,9 +288,8 @@ a, a:hover, a:visited
   background-color: #ffffff
   letter-spacing: 0.45px
   position: absolute
-  display: flex
+  @extend .flex-center
   flex-direction: column
-  justify-content: center
   margin-top: 20px
   padding-left: 19px
 
@@ -317,15 +306,13 @@ a, a:hover, a:visited
   background-size: cover
   filter: gray(50%)
   height: 518px
-  display: flex
-  justify-content: center
+  @extend .flex-center
 
 .response_block
   width: $main_width
   height: 100%
-  display: flex
+  @extend .flex-sp-between
   align-items: center
-  justify-content: space-between
 
 .response_block_left
   width: 38%
@@ -397,9 +384,7 @@ a, a:hover, a:visited
 
 .subscrible_title span
   font-size: 14px
-
   text-transform: uppercase
-
   letter-spacing: 0.35px
   line-height: 24px
 
