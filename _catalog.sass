@@ -82,6 +82,7 @@ summary
 
 .filter_var_item:last-of-type
   border-right: none
+
 .catalog_range_price
   @extend .flex-sp-between
 
@@ -115,10 +116,14 @@ summary
   margin-right: 20px
   margin-bottom: 60px
   position: relative
+  transition: box-shadow 0.5s
+
 
 .item_block:hover .item_img
   filter: brightness(50%)
 
+.item_img
+  transition: filter 0.5s
 .item_text
   padding-top: 20px
   padding-left: 14px
@@ -180,6 +185,7 @@ summary
 
 .container_sort_pick
   margin: 10px
+
   span
     width: 45px
     height: 12px

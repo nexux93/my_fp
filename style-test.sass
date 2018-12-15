@@ -1,0 +1,36 @@
+@import "var"
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i')
+.container
+  @extend .flex-center
+  &__block
+    width: 1140px
+
+.header
+  @extend .flex-sp-between
+  &__left
+    @extend .flex-center
+
+.brand
+  display: flex
+  &__name
+    color: #222222
+    font-size: 27px
+    font-weight: 400
+    line-height: 32px
+    text-transform: uppercase
+    font-family: Lato
+    display: flex
+    align-items: center
+    letter-spacing: 0.68px
+    text-decoration: none
+  &__img
+    margin-right: 10px
+  &__d
+    color: #f16d7f
+    font-weight: 600
+
+.search
+  display: flex
+  align-items: center
+  margin-left: 37px
+
