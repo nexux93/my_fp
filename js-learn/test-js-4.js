@@ -40,16 +40,27 @@
 // countBasketPrice(price);
 
 
-var product = {
-  item: 'dress',
-  count: '2',
-  price: '23'
-};
+var product = [
+    {
+        item: 'dress',
+        count: '2',
+        price: '23'
+    },
+    {
+        item: 'trousers',
+        count: '4',
+        price: '25'
+    }
+];
 
-function priceTotal () {
+function priceTotal() {
+    for (p = 0; p < product.length; p++) {
+
+    }
     var summ = product.count * product.price;
     console.log(summ);
     return summ;
 
 }
-priceTotal ();
+
+priceTotal();
