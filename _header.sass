@@ -84,6 +84,121 @@ header
 
 .card_img
   margin-right: 22px
+  display: block
+  position: relative
+
+
+.card_product
+  display: flex
+  flex-direction: column
+  cursor: default
+  position: absolute
+  top: 50px
+  left: -18px
+  width: 262px
+  box-sizing: border-box
+  padding: 21px 17px
+  height: 440px
+  border-radius: 5px
+  background-color: #ffffff
+  border: #ececec solid 1px
+
+  &__totalPrice
+    display: flex
+    justify-content: space-between
+    color: #222222
+    font-family: Lato
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+
+  &__checkout
+    @extend .flex-center
+    display: block
+    border: 1px solid #ef5b70
+    background-color: #ffffff
+    line-height: 55px
+    text-align: center
+    color: #ef5b70
+    font-family: Lato
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    margin-top: 32px
+
+  &__toCard
+    @extend .flex-center
+    margin-top: 11px
+
+.btn_empty_grey
+  border: 1px solid #eaeaea
+  display: block
+  background-color: #ffffff
+  line-height: 55px
+  text-align: center
+  color: #4a4a4a
+  font-family: Lato
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
+
+.card_product::before
+  content: ""
+  width: 12px
+  height: 12px
+  background: #ffffff
+  display: block
+  position: absolute
+  left: 30px
+  top: -7px
+  transform: rotate(45deg)
+  border-left: 1px solid #e8e8e8
+  border-top: 1px solid #e8e8e8
+
+.card_desc
+  &__name
+    color: #222222
+    font-family: Lato
+    font-size: 12px
+    font-weight: 700
+    text-transform: uppercase
+
+  &__respect
+    margin-top: 6px
+    margin-bottom: 7px
+
+  &__price
+    color: #f16d7f
+    font-family: Lato
+    font-size: 12px
+    font-weight: 400
+    text-transform: uppercase
+
+.card_product__item
+  display: flex
+
+.card_item
+  &__img
+    display: flex
+    flex-grow: 1
+
+  &__desc
+    display: flex
+    flex-direction: column
+    flex-grow: 2
+    justify-content: center
+
+  &__delete
+    display: flex
+    flex-grow: 1
+    align-items: center
+
+.card_separator
+  width: 229px
+  height: 1px
+  background-color: #ededed
+  margin-top: 16px
+  margin-bottom: 16px
 
 .btn-pink
   color: #ffffff
@@ -94,7 +209,6 @@ header
   background-color: #f16d7f
   letter-spacing: 0.38px
   padding: 5px 17px
-  border-radius: 3px
   transition: background-color 1s linear
 
 .btn-pink:hover
@@ -131,6 +245,7 @@ header
   border: solid 1px #e8e8e8
   display: none
 
+
 .mega_menu_link:hover .mega_menu_container
   display: block
   transition: top 1s ease-out 0.5s
@@ -138,15 +253,15 @@ header
 .mega_menu_container::before
   content: ""
   width: 12px
-    height: 12px
-    background: #ffffff
-    display: block
-    position: absolute
-    left: 30px
-    top: -7px
-    transform: rotate(45deg)
-    border-left: 1px solid #e8e8e8
-    border-top: 1px solid #e8e8e8
+  height: 12px
+  background: #ffffff
+  display: block
+  position: absolute
+  left: 30px
+  top: -7px
+  transform: rotate(45deg)
+  border-left: 1px solid #e8e8e8
+  border-top: 1px solid #e8e8e8
 
 .mega_container_inside
   padding: 25px

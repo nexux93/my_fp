@@ -79,7 +79,110 @@ header {
   right: 1px; }
 
 .card_img {
-  margin-right: 22px; }
+  margin-right: 22px;
+  display: block;
+  position: relative; }
+
+.card_product {
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+  position: absolute;
+  top: 50px;
+  left: -18px;
+  width: 262px;
+  box-sizing: border-box;
+  padding: 21px 17px;
+  height: 440px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: #ececec solid 1px; }
+  .card_product__totalPrice {
+    display: flex;
+    justify-content: space-between;
+    color: #222222;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .card_product__checkout {
+    display: block;
+    border: 1px solid #ef5b70;
+    background-color: #ffffff;
+    line-height: 55px;
+    text-align: center;
+    color: #ef5b70;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 32px; }
+  .card_product__toCard {
+    margin-top: 11px; }
+
+.btn_empty_grey {
+  border: 1px solid #eaeaea;
+  display: block;
+  background-color: #ffffff;
+  line-height: 55px;
+  text-align: center;
+  color: #4a4a4a;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.card_product::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  left: 30px;
+  top: -7px;
+  transform: rotate(45deg);
+  border-left: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8; }
+
+.card_desc__name {
+  color: #222222;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase; }
+.card_desc__respect {
+  margin-top: 6px;
+  margin-bottom: 7px; }
+.card_desc__price {
+  color: #f16d7f;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.card_product__item {
+  display: flex; }
+
+.card_item__img {
+  display: flex;
+  flex-grow: 1; }
+.card_item__desc {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  justify-content: center; }
+.card_item__delete {
+  display: flex;
+  flex-grow: 1;
+  align-items: center; }
+
+.card_separator {
+  width: 229px;
+  height: 1px;
+  background-color: #ededed;
+  margin-top: 16px;
+  margin-bottom: 16px; }
 
 .btn-pink {
   color: #ffffff;
@@ -90,7 +193,6 @@ header {
   background-color: #f16d7f;
   letter-spacing: 0.38px;
   padding: 5px 17px;
-  border-radius: 3px;
   transition: background-color 1s linear; }
 
 .btn-pink:hover {
@@ -133,15 +235,15 @@ header {
 .mega_menu_container::before {
   content: "";
   width: 12px;
-    width-height: 12px;
-    width-background: #ffffff;
-    width-display: block;
-    width-position: absolute;
-    width-left: 30px;
-    width-top: -7px;
-    width-transform: rotate(45deg);
-    width-border-left: 1px solid #e8e8e8;
-    width-border-top: 1px solid #e8e8e8; }
+  height: 12px;
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  left: 30px;
+  top: -7px;
+  transform: rotate(45deg);
+  border-left: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8; }
 
 .mega_container_inside {
   padding: 25px;
@@ -191,9 +293,12 @@ header {
 .delivery_width, .coupon_item, .delivery_item {
   width: 308px; }
 
-.flex-center, .header_left, .header-right, .btn_browse, .menu, .footer_footer, .container-catalog-product, .catalog-land-block, .advantage_container, .advantage_item, .container_row_button, .container_delivery, .product_list_item_description, .single-container, .single-block__img, .material, .empty_add_cart, .container-items, .block_add, .container-sale, .row-button, .container_category, .container-banner, .block_man_text, .block_woman_text, .block_acces_text, .block_kids_text, .container-response {
+.flex-center, .header_left, .header-right, .btn_browse, .card_product__checkout, .card_product__toCard, .menu, .footer_footer, .container-catalog-product, .catalog-land-block, .advantage_container, .advantage_item, .container_row_button, .container_delivery, .product_list_item_description, .single-container, .single-block__img, .material, .empty_add_cart, .container-items, .block_add, .container-sale, .row-button, .container_category, .container-banner, .block_man_text, .block_woman_text, .block_acces_text, .block_kids_text, .container-response {
   display: flex;
   justify-content: center; }
+
+.marg-top {
+  margin-top: 33px; }
 
 .flex-sp-between, .container-header, .container-footer, .container-ff, .container-land-block, .catalog-container, .catalog-section-product, .catalog_range_price, .row-pagination, .advantage_block, .select_product_title, .product_list_item_right, .product_list_item, .delivery_block, .container_button, .product_title_right, .banner, .response_block {
   display: flex;
@@ -205,6 +310,7 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0; }
 
+/* <-- Apparently some margin are still there even though it's hidden */
 footer {
   display: flex;
   align-items: center;
@@ -504,8 +610,11 @@ summary {
 /* Задаем внешний вид для нашего кастомного чекбокса. Все обязательные свойства прокомментированы, остальные же свойства меняйте по вашему усмотрению */
 .checkbox-custom {
   position: relative;
+  /* Обязательно задаем, чтобы мы могли абсолютным образом позиционировать псевдоэлемент внютри нашего кастомного чекбокса */
   width: 13px;
+  /* Обязательно задаем ширину */
   height: 13px;
+  /* Обязательно задаем высоту */
   border: 1px solid #ebebeb; }
 
 /* Кастомный чекбокс и лейбл центрируем по вертикали. Если вам это не требуется, то вы можете убрать свойство vertical-align: middle из данного правила, но свойство display: inline-block обязательно должно быть */
@@ -517,14 +626,18 @@ summary {
 /* Если реальный чекбокс у нас отмечен, то тогда добавляем данный признак и к нашему кастомному чекбоксу  */
 .checkbox:checked + .checkbox-custom::before {
   content: "";
+  /* Добавляем наш псевдоэлемент */
   display: block;
+  /* Делаем его блочным элементом */
   position: absolute;
+  /* Позиционируем его абсолютным образом */
   /* Задаем расстояние от верхней, правой, нижней и левой границы */
   top: 2px;
   right: 2px;
   bottom: 2px;
   left: 2px;
   background: #F16D7F;
+  /* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
   border-radius: 2px; }
 
 .checkbox_label {
@@ -539,9 +652,12 @@ summary {
 .delivery_width, .coupon_item, .delivery_item {
   width: 308px; }
 
-.flex-center, .header_left, .header-right, .btn_browse, .menu, .footer_footer, .container-catalog-product, .catalog-land-block, .advantage_container, .advantage_item, .container_row_button, .container_delivery, .product_list_item_description, .single-container, .single-block__img, .material, .empty_add_cart, .container-items, .block_add, .container-sale, .row-button, .container_category, .container-banner, .block_man_text, .block_woman_text, .block_acces_text, .block_kids_text, .container-response {
+.flex-center, .header_left, .header-right, .btn_browse, .card_product__checkout, .card_product__toCard, .menu, .footer_footer, .container-catalog-product, .catalog-land-block, .advantage_container, .advantage_item, .container_row_button, .container_delivery, .product_list_item_description, .single-container, .single-block__img, .material, .empty_add_cart, .container-items, .block_add, .container-sale, .row-button, .container_category, .container-banner, .block_man_text, .block_woman_text, .block_acces_text, .block_kids_text, .container-response {
   display: flex;
   justify-content: center; }
+
+.marg-top {
+  margin-top: 33px; }
 
 .flex-sp-between, .container-header, .container-footer, .container-ff, .container-land-block, .catalog-container, .catalog-section-product, .catalog_range_price, .row-pagination, .advantage_block, .select_product_title, .product_list_item_right, .product_list_item, .delivery_block, .container_button, .product_title_right, .banner, .response_block {
   display: flex;
@@ -553,6 +669,7 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0; }
 
+/* <-- Apparently some margin are still there even though it's hidden */
 .container_select_product {
   display: flex;
   align-items: center;
@@ -953,9 +1070,12 @@ input::-webkit-inner-spin-button {
 .delivery_width, .coupon_item, .delivery_item {
   width: 308px; }
 
-.flex-center, .header_left, .header-right, .btn_browse, .menu, .footer_footer, .container-catalog-product, .catalog-land-block, .advantage_container, .advantage_item, .container_row_button, .container_delivery, .product_list_item_description, .single-container, .single-block__img, .material, .empty_add_cart, .container-items, .block_add, .container-sale, .row-button, .container_category, .container-banner, .block_man_text, .block_woman_text, .block_acces_text, .block_kids_text, .container-response {
+.flex-center, .header_left, .header-right, .btn_browse, .card_product__checkout, .card_product__toCard, .menu, .footer_footer, .container-catalog-product, .catalog-land-block, .advantage_container, .advantage_item, .container_row_button, .container_delivery, .product_list_item_description, .single-container, .single-block__img, .material, .empty_add_cart, .container-items, .block_add, .container-sale, .row-button, .container_category, .container-banner, .block_man_text, .block_woman_text, .block_acces_text, .block_kids_text, .container-response {
   display: flex;
   justify-content: center; }
+
+.marg-top {
+  margin-top: 33px; }
 
 .flex-sp-between, .container-header, .container-footer, .container-ff, .container-land-block, .catalog-container, .catalog-section-product, .catalog_range_price, .row-pagination, .advantage_block, .select_product_title, .product_list_item_right, .product_list_item, .delivery_block, .container_button, .product_title_right, .banner, .response_block {
   display: flex;
@@ -967,36 +1087,79 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0; }
 
+/* <-- Apparently some margin are still there even though it's hidden */
 .checkout {
   display: flex;
   justify-content: center; }
   .checkout__container {
     width: 1140px; }
 
-.check {
-  display: flex;
-  flex-direction: row; }
-  .check__one {
-    display: flex;
-    flex: 2;
-    flex-direction: column; }
-  .check__two {
-    display: flex;
-    flex: 2;
-    flex-direction: column; }
+.check_list__separator {
+  width: 100%;
+  margin-top: 31px;
+  margin-bottom: 33px;
+  border-bottom: 1px solid #dfdfdf; }
 
-.check__title {
+.check_list:last-of-type {
+  margin-bottom: 70px; }
+
+.list_container {
+  display: flex; }
+  .list_container__left {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; }
+  .list_container__right {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; }
+
+.list_left__bold, .list_right__bold {
+  color: #222222;
   font-family: Lato;
   font-size: 13px;
-  line-height: 20px; }
-
-.check__main {
-  color: #222222;
-  font-weight: 600; }
-
-.check__sub {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px; }
+.list_left__light, .list_right__light {
   color: #b3b2b2;
-  font-weight: 400; }
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px; }
+.list_left__form, .list_right__form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 33px;
+  margin-bottom: 33px; }
+.list_left__next, .list_right__next {
+  margin-top: 38px;
+  width: 180px; }
+.list_left__login, .list_right__login {
+  width: 180px; }
+
+.form_login__btn {
+  margin-right: 38px; }
+
+.right_form input {
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding: 16px;
+  box-sizing: border-box; }
+.right_form__login {
+  display: flex;
+  align-items: center; }
+.right_form__email, .right_form__password {
+  margin-bottom: 16px; }
+.right_form__required {
+  margin-bottom: 32px;
+  margin-top: 22px;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 700; }
+.right_form__forgot, .right_form__forgot:hover, .right_form__forgot:visited {
+  color: #222222; }
 
 .line-he, .product_btn_clear, .product_btn_continue {
   line-height: 50px;
@@ -1005,9 +1168,12 @@ input::-webkit-inner-spin-button {
 .delivery_width, .coupon_item, .delivery_item {
   width: 308px; }
 
-.flex-center, .header_left, .header-right, .btn_browse, .menu, .footer_footer, .container-catalog-product, .catalog-land-block, .advantage_container, .advantage_item, .container_row_button, .container_delivery, .product_list_item_description, .single-container, .single-block__img, .material, .empty_add_cart, .container-items, .block_add, .container-sale, .row-button, .container_category, .container-banner, .block_man_text, .block_woman_text, .block_acces_text, .block_kids_text, .container-response {
+.flex-center, .header_left, .header-right, .btn_browse, .card_product__checkout, .card_product__toCard, .menu, .footer_footer, .container-catalog-product, .catalog-land-block, .advantage_container, .advantage_item, .container_row_button, .container_delivery, .product_list_item_description, .single-container, .single-block__img, .material, .empty_add_cart, .container-items, .block_add, .container-sale, .row-button, .container_category, .container-banner, .block_man_text, .block_woman_text, .block_acces_text, .block_kids_text, .container-response {
   display: flex;
   justify-content: center; }
+
+.marg-top {
+  margin-top: 33px; }
 
 .flex-sp-between, .container-header, .container-footer, .container-ff, .container-land-block, .catalog-container, .catalog-section-product, .catalog_range_price, .row-pagination, .advantage_block, .select_product_title, .product_list_item_right, .product_list_item, .delivery_block, .container_button, .product_title_right, .banner, .response_block {
   display: flex;
@@ -1019,6 +1185,7 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0; }
 
+/* <-- Apparently some margin are still there even though it's hidden */
 @-webkit-keyframes rotate-scale-up {
   0% {
     -webkit-transform: scale(1) rotateZ(0);
@@ -1476,6 +1643,9 @@ details[open] > summary::after {
 
 .white {
   color: white; }
+
+.red {
+  color: #ff0d0d; }
 
 .btn_empty {
   width: 150px;

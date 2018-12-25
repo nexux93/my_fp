@@ -10,6 +10,9 @@
   display: flex;
   justify-content: center; }
 
+.marg-top {
+  margin-top: 33px; }
+
 .flex-sp-between, .header {
   display: flex;
   justify-content: space-between; }
@@ -20,6 +23,7 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0; }
 
+/* <-- Apparently some margin are still there even though it's hidden */
 .container__block {
   width: 1140px; }
 
