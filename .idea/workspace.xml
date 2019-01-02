@@ -9,14 +9,59 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.2750533">
+    <splitter split-orientation="horizontal" split-proportion="0.4392324">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js-learn/test-js-5.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1037">
+                  <caret line="111" selection-start-line="111" selection-end-line="111" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js-learn/test-js-4.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="17">
+                  <caret line="15" selection-start-line="15" selection-end-line="16" />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/_header.sass">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="722">
+                  <caret line="314" selection-start-line="314" selection-end-line="314" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js-learn/index-js.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+                <state relative-caret-position="841">
+                  <caret line="72" column="42" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-221">
+                  <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/catalog.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="841">
+                  <caret line="547" column="7" selection-start-line="547" selection-start-column="7" selection-end-line="547" selection-end-column="7" />
                 </state>
               </provider>
             </entry>
@@ -25,26 +70,20 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-learn/test-js-3.js">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js-learn/test-js-5.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="391">
-                  <caret line="23" lean-forward="true" selection-start-line="12" selection-end-line="23" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                  </folding>
+                <state relative-caret-position="529">
+                  <caret line="62" column="13" lean-forward="true" selection-start-line="45" selection-start-column="11" selection-end-line="62" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/js-learn/test-js-4.js">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="756">
-                  <caret line="54" column="14" lean-forward="true" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                  </folding>
+                <state relative-caret-position="22331">
+                  <caret line="1380" selection-start-line="1380" selection-end-line="1380" />
                 </state>
               </provider>
             </entry>
@@ -66,27 +105,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>display: flexjustify-content: space-between</find>
-      <find>.delivery_</find>
-      <find>.container_delivery</find>
-      <find>product_title_item</find>
-      <find>product_list_item_right</find>
-      <find>delivery_block</find>
-      <find>sale_block_text</find>
-      <find>}</find>
-      <find>mega_menu_link</find>
-      <find>mega_menu_container</find>
-      <find>btn</find>
-      <find>product_name</find>
-      <find>header_</find>
-      <find>grand_total_prise_field</find>
-      <find>product_price_input</find>
-      <find>a, a:hover, a:visited</find>
-      <find>mega_menu_link_color</find>
-      <find>product_name_link</find>
-      <find>single</find>
-      <find>single-separator__2</find>
-      <find>pos</find>
       <find>breadcrumbs</find>
       <find>.item_block</find>
       <find>.item_img</find>
@@ -96,6 +114,27 @@
       <find>console.log('');</find>
       <find>one</find>
       <find>two</find>
+      <find>&quot;</find>
+      <find>description_block_item</find>
+      <find>separator</find>
+      <find>btn</find>
+      <find>card_desc</find>
+      <find>btn_empty</find>
+      <find>form_login</find>
+      <find>__toCard</find>
+      <find>sepa</find>
+      <find>.filter</find>
+      <find>check_list</find>
+      <find>filter</find>
+      <find>right_form</find>
+      <find>card_desc__count</find>
+      <find>card_desc_price</find>
+      <find>card_desc__price</find>
+      <find>card_img</find>
+      <find>$cardDelete</find>
+      <find>$cardTotalPrice</find>
+      <find>card_product</find>
+      <find>card</find>
     </findStrings>
     <replaceStrings>
       <replace>$main_width: 1140px</replace>
@@ -104,6 +143,7 @@
       <replace>mega_menu_link</replace>
       <replace>arg1</replace>
       <replace>arg2</replace>
+      <replace>'</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -117,26 +157,28 @@
         <option value="$PROJECT_DIR$/_mixins.sass" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/_shoping_cart.sass" />
-        <option value="$PROJECT_DIR$/_header.sass" />
-        <option value="$PROJECT_DIR$/_single_page.sass" />
         <option value="$PROJECT_DIR$/img/2-layers.svg" />
         <option value="$PROJECT_DIR$/style-test.sass" />
         <option value="$PROJECT_DIR$/index-test.html" />
         <option value="$PROJECT_DIR$/_catalog.sass" />
         <option value="$PROJECT_DIR$/_footer.sass" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/single page.html" />
         <option value="$PROJECT_DIR$/Shopping Cart.html" />
         <option value="$PROJECT_DIR$/catalog.html" />
         <option value="$PROJECT_DIR$/_chekout.sass" />
-        <option value="$PROJECT_DIR$/style.sass" />
-        <option value="$PROJECT_DIR$/_var.sass" />
-        <option value="$PROJECT_DIR$/checkout.html" />
-        <option value="$PROJECT_DIR$/_checkout.sass" />
         <option value="$PROJECT_DIR$/js-learn/test-script.js" />
         <option value="$PROJECT_DIR$/js-learn/test-js-3.js" />
-        <option value="$PROJECT_DIR$/js-learn/index-js.html" />
         <option value="$PROJECT_DIR$/js-learn/test-js-4.js" />
+        <option value="$PROJECT_DIR$/js-script.js" />
+        <option value="$PROJECT_DIR$/_single_page.sass" />
+        <option value="$PROJECT_DIR$/style.sass" />
+        <option value="$PROJECT_DIR$/_checkout.sass" />
+        <option value="$PROJECT_DIR$/checkout.html" />
+        <option value="$PROJECT_DIR$/js-learn/index-js.html" />
+        <option value="$PROJECT_DIR$/_var.sass" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/_header.sass" />
+        <option value="$PROJECT_DIR$/js-learn/test-js-5.js" />
       </list>
     </option>
   </component>
@@ -158,8 +200,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="125" />
-    <option name="y" value="-26" />
+    <option name="x" value="139" />
+    <option name="y" value="37" />
     <option name="width" value="1616" />
     <option name="height" value="876" />
   </component>
@@ -168,6 +210,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -184,18 +227,17 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="F:/git/my_fp" />
+    <property name="last_opened_file_path" value="F:/git/my_fp/style.sass" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
-    <property name="two.files.diff.last.used.file" value="F:/git/my_fp/style.css" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+    <property name="two.files.diff.last.used.file" value="F:/git/my_fp/style.sass" />
     <property name="two.files.diff.last.used.folder" value="F:/git/my_fp" />
   </component>
   <component name="RecentsManager">
@@ -281,12 +323,36 @@
       <workItem from="1544778682156" duration="5652000" />
       <workItem from="1544799432110" duration="1166000" />
       <workItem from="1544898841944" duration="175000" />
-      <workItem from="1544900155765" duration="5203000" />
+      <workItem from="1544900155765" duration="5650000" />
+      <workItem from="1545130030501" duration="1996000" />
+      <workItem from="1545152932097" duration="1365000" />
+      <workItem from="1545387370988" duration="599000" />
+      <workItem from="1545428359060" duration="4366000" />
+      <workItem from="1545510372384" duration="1339000" />
+      <workItem from="1545675637376" duration="13598000" />
+      <workItem from="1545739226311" duration="10210000" />
+      <workItem from="1545855231382" duration="3226000" />
+      <workItem from="1546071716648" duration="91000" />
+      <workItem from="1546071879587" duration="635000" />
+      <workItem from="1546117379467" duration="349000" />
+      <workItem from="1546117747853" duration="2386000" />
+      <workItem from="1546156118212" duration="2614000" />
+      <workItem from="1546201289509" duration="1621000" />
+      <workItem from="1546422527458" duration="7446000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166809000" />
+    <option name="totallyTimeSpent" value="219097000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -294,20 +360,20 @@
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" weight="0.15085287" />
+      <window_info content_ui="combo" id="Project" order="2" weight="0.1684435" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.44420367" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="10" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.329718" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32936078" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -373,17 +439,7 @@
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/structural.rnc" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/web-forms2.rnc" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/phrase.rnc" />
-    <entry file="file://$PROJECT_DIR$/_checkbox.sass" />
     <entry file="file://$PROJECT_DIR$/макеты/Single Page.psd" />
-    <entry file="file://$PROJECT_DIR$/_shoping_cart.sass" />
-    <entry file="file://$PROJECT_DIR$/_header.sass" />
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="194" column="16" lean-forward="true" selection-start-line="194" selection-start-column="16" selection-end-line="194" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/single2.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -398,13 +454,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_single_page.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="162" column="19" selection-start-line="162" selection-start-column="19" selection-end-line="162" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index-test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -412,9 +461,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_catalog.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2125">
+          <caret line="125" column="25" selection-start-line="125" selection-start-column="25" selection-end-line="125" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_footer.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="77" column="28" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/Layer_4.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="608" column="33" lean-forward="true" selection-start-line="608" selection-start-column="33" selection-end-line="608" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.411/test-js-3.js" />
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="404" column="4" selection-start-line="404" selection-start-column="4" selection-end-line="404" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-learn/test-script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1196">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-learn/test-js-3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="23" selection-start-line="12" selection-end-line="23" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/single page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7038">
+        <state relative-caret-position="864">
           <caret line="414" column="7" selection-start-line="414" selection-start-column="7" selection-end-line="414" selection-end-column="7" />
           <folding>
             <element signature="e#1505#1511#0" expanded="true" />
@@ -440,10 +547,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_single_page.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="152" selection-start-line="152" selection-end-line="152" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_checkbox.sass">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_shoping_cart.sass">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_checkout.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="19" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#5;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Shopping Cart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7174">
-          <caret line="422" column="7" selection-start-line="422" selection-start-column="7" selection-end-line="422" selection-end-column="7" />
+        <state relative-caret-position="-841">
+          <caret line="240" column="63" selection-start-line="240" selection-start-column="63" selection-end-line="240" selection-end-column="63" />
           <folding>
             <element signature="e#1505#1511#0" expanded="true" />
             <element signature="e#7558#7564#0" expanded="true" />
@@ -470,193 +616,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9299">
-          <caret line="547" column="7" selection-start-line="547" selection-start-column="7" selection-end-line="547" selection-end-column="7" />
-          <folding>
-            <element signature="e#1491#1497#0" expanded="true" />
-            <element signature="e#7544#7550#0" expanded="true" />
-            <element signature="e#8217#8222#0" expanded="true" />
-            <element signature="e#8222#8228#0" expanded="true" />
-            <element signature="e#8319#8324#0" expanded="true" />
-            <element signature="e#8324#8330#0" expanded="true" />
-            <element signature="e#8803#8808#0" expanded="true" />
-            <element signature="e#8808#8814#0" expanded="true" />
-            <element signature="e#16114#16120#0" expanded="true" />
-            <element signature="e#16330#16335#0" expanded="true" />
-            <element signature="e#16335#16341#0" expanded="true" />
-            <element signature="e#16395#16401#0" expanded="true" />
-            <element signature="e#16665#16671#0" expanded="true" />
-            <element signature="e#17044#17051#0" expanded="true" />
-            <element signature="e#17102#17108#0" expanded="true" />
-            <element signature="e#17113#17119#0" expanded="true" />
-            <element signature="e#17145#17151#0" expanded="true" />
-            <element signature="e#17198#17205#0" expanded="true" />
-            <element signature="e#18687#18693#0" expanded="true" />
-            <element signature="e#18735#18741#0" expanded="true" />
-            <element signature="e#18758#18764#0" expanded="true" />
-            <element signature="e#18875#18881#0" expanded="true" />
-            <element signature="e#19414#19420#0" expanded="true" />
-            <element signature="e#19762#19767#0" expanded="true" />
-            <element signature="e#19767#19773#0" expanded="true" />
-            <element signature="e#19937#19943#0" expanded="true" />
-            <element signature="e#20019#20025#0" expanded="true" />
-            <element signature="e#20851#20857#0" expanded="true" />
-            <element signature="e#20857#20863#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_catalog.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2125">
-          <caret line="125" column="25" selection-start-line="125" selection-start-column="25" selection-end-line="125" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_footer.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="77" column="28" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/Layer_4.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="17269" column="26" selection-start-line="17269" selection-start-column="26" selection-end-line="17269" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="437" column="17" selection-start-line="437" selection-start-column="17" selection-end-line="437" selection-end-column="17" />
-          <folding>
-            <element signature="e#1489#1495#0" expanded="true" />
-            <element signature="e#7402#7408#0" expanded="true" />
-            <element signature="e#8033#8038#0" expanded="true" />
-            <element signature="e#8038#8044#0" expanded="true" />
-            <element signature="e#8944#8950#0" expanded="true" />
-            <element signature="e#8957#8963#0" expanded="true" />
-            <element signature="e#8974#8980#0" expanded="true" />
-            <element signature="e#9322#9328#0" expanded="true" />
-            <element signature="e#9895#9901#0" expanded="true" />
-            <element signature="e#10468#10474#0" expanded="true" />
-            <element signature="e#11041#11047#0" expanded="true" />
-            <element signature="e#11614#11620#0" expanded="true" />
-            <element signature="e#12753#12759#0" expanded="true" />
-            <element signature="e#13137#13142#0" expanded="true" />
-            <element signature="e#13142#13148#0" expanded="true" />
-            <element signature="e#13231#13237#0" expanded="true" />
-            <element signature="e#13698#13704#0" expanded="true" />
-            <element signature="e#14092#14099#0" expanded="true" />
-            <element signature="e#14150#14156#0" expanded="true" />
-            <element signature="e#14161#14167#0" expanded="true" />
-            <element signature="e#14193#14199#0" expanded="true" />
-            <element signature="e#14246#14253#0" expanded="true" />
-            <element signature="e#15735#15741#0" expanded="true" />
-            <element signature="e#15783#15789#0" expanded="true" />
-            <element signature="e#15806#15812#0" expanded="true" />
-            <element signature="e#15923#15929#0" expanded="true" />
-            <element signature="e#16462#16468#0" expanded="true" />
-            <element signature="e#16810#16815#0" expanded="true" />
-            <element signature="e#16815#16821#0" expanded="true" />
-            <element signature="e#16985#16991#0" expanded="true" />
-            <element signature="e#17067#17073#0" expanded="true" />
-            <element signature="e#17899#17905#0" expanded="true" />
-            <element signature="e#17905#17911#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="608" column="33" lean-forward="true" selection-start-line="608" selection-start-column="33" selection-end-line="608" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="172" column="21" selection-start-line="172" selection-start-column="21" selection-end-line="172" selection-end-column="21" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#1500#1506#0" expanded="true" />
-            <element signature="e#7375#7381#0" expanded="true" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_checkout.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="298">
+          <caret line="495" column="32" lean-forward="true" selection-start-line="495" selection-start-column="32" selection-end-line="495" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_var.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="11" selection-start-line="3" selection-end-line="3" selection-end-column="11" />
+        <state relative-caret-position="204">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-learn/test-script.js">
+    <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="22331">
+          <caret line="1380" selection-start-line="1380" selection-end-line="1380" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.411/test-js-3.js" />
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="404" column="4" selection-start-line="404" selection-start-column="4" selection-end-line="404" selection-end-column="4" />
+        <state relative-caret-position="1064">
+          <caret line="10328" column="4" selection-start-line="10328" selection-start-column="4" selection-end-line="10328" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js-learn/index-js.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        <state relative-caret-position="841">
+          <caret line="72" column="42" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-learn/test-js-3.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" lean-forward="true" selection-start-line="12" selection-end-line="23" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="-221">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="841">
+          <caret line="547" column="7" selection-start-line="547" selection-start-column="7" selection-end-line="547" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js-learn/test-js-4.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="54" column="14" lean-forward="true" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="15" selection-start-line="15" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_header.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="314" selection-start-line="314" selection-end-line="314" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-learn/test-js-5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="62" column="13" lean-forward="true" selection-start-line="45" selection-start-column="11" selection-end-line="62" selection-end-column="13" />
         </state>
       </provider>
     </entry>

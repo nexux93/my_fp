@@ -149,6 +149,6 @@ function fun(alpha, beta) {
     if (beta === 1) {
         return alpha;
     } else {
-        return fun(alpha, beta -1);
+        return fun(alpha, beta - 1);
     }
 }

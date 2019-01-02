@@ -6,6 +6,9 @@
 .delivery_width {
   width: 308px; }
 
+.flex {
+  display: flex; }
+
 .flex-center, .container, .header__left {
   display: flex;
   justify-content: center; }

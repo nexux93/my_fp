@@ -93,7 +93,7 @@ header {
   width: 262px;
   box-sizing: border-box;
   padding: 21px 17px;
-  height: 440px;
+  height: auto;
   border-radius: 5px;
   background-color: #ffffff;
   border: #ececec solid 1px; }
@@ -160,6 +160,10 @@ header {
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase; }
+.card_desc__count {
+  padding-right: 4px; }
+.card_desc__summ {
+  padding-left: 4px; }
 
 .card_product__item {
   display: flex; }
@@ -286,12 +290,23 @@ header {
 .mega_menu_link, .mega_menu_link:hover, .footer_link, .footer_link:hover {
   color: #646464; }
 
+.card_empty {
+  line-height: 55px;
+  text-align: center;
+  color: #4a4a4a;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
 .line-he, .product_btn_clear, .product_btn_continue {
   line-height: 50px;
   text-align: center; }
 
 .delivery_width, .coupon_item, .delivery_item {
   width: 308px; }
+
+.flex {
+  display: flex; }
 
 .flex-center, .header_left, .header-right, .btn_browse, .card_product__checkout, .card_product__toCard, .menu, .footer_footer, .container-catalog-product, .catalog-land-block, .advantage_container, .advantage_item, .container_row_button, .container_delivery, .product_list_item_description, .single-container, .single-block__img, .material, .empty_add_cart, .container-items, .block_add, .container-sale, .row-button, .container_category, .container-banner, .block_man_text, .block_woman_text, .block_acces_text, .block_kids_text, .container-response {
   display: flex;
@@ -651,6 +666,9 @@ summary {
 
 .delivery_width, .coupon_item, .delivery_item {
   width: 308px; }
+
+.flex {
+  display: flex; }
 
 .flex-center, .header_left, .header-right, .btn_browse, .card_product__checkout, .card_product__toCard, .menu, .footer_footer, .container-catalog-product, .catalog-land-block, .advantage_container, .advantage_item, .container_row_button, .container_delivery, .product_list_item_description, .single-container, .single-block__img, .material, .empty_add_cart, .container-items, .block_add, .container-sale, .row-button, .container_category, .container-banner, .block_man_text, .block_woman_text, .block_acces_text, .block_kids_text, .container-response {
   display: flex;
@@ -1070,6 +1088,9 @@ input::-webkit-inner-spin-button {
 .delivery_width, .coupon_item, .delivery_item {
   width: 308px; }
 
+.flex {
+  display: flex; }
+
 .flex-center, .header_left, .header-right, .btn_browse, .card_product__checkout, .card_product__toCard, .menu, .footer_footer, .container-catalog-product, .catalog-land-block, .advantage_container, .advantage_item, .container_row_button, .container_delivery, .product_list_item_description, .single-container, .single-block__img, .material, .empty_add_cart, .container-items, .block_add, .container-sale, .row-button, .container_category, .container-banner, .block_man_text, .block_woman_text, .block_acces_text, .block_kids_text, .container-response {
   display: flex;
   justify-content: center; }
@@ -1167,6 +1188,9 @@ input::-webkit-inner-spin-button {
 
 .delivery_width, .coupon_item, .delivery_item {
   width: 308px; }
+
+.flex {
+  display: flex; }
 
 .flex-center, .header_left, .header-right, .btn_browse, .card_product__checkout, .card_product__toCard, .menu, .footer_footer, .container-catalog-product, .catalog-land-block, .advantage_container, .advantage_item, .container_row_button, .container_delivery, .product_list_item_description, .single-container, .single-block__img, .material, .empty_add_cart, .container-items, .block_add, .container-sale, .row-button, .container_category, .container-banner, .block_man_text, .block_woman_text, .block_acces_text, .block_kids_text, .container-response {
   display: flex;
