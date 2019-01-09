@@ -1,30 +1,164 @@
 window.onload = function () {
 
+    var $cardList = document.getElementById('card_list');
+
+    function cleanerCard() {
+
+        while ($cardList.firstElementChild) {
+
+            $cardList.removeChild($cardList.firstElementChild);
+        }
+
+        var productArray = [
+            {
+                item: 'paint',
+                img: 'img/card_item.jpg',
+                counts: '1',
+                price: '200',
+                id: 8
+            }
+        ];
+
+    }
+
+
+    var product = [
+        {
+            img: 'img/Layer_4.jpg',
+            item: 'Mango People T-shirt',
+            price: '52',
+            counts: '3',
+            id: 1
+
+        },
+        {
+            img: 'img/Layer_4.jpg',
+            item: 'Mango People T-shirt',
+            price: '52',
+            counts: '3',
+            id: 2
+        },
+        {
+            img: 'img/Layer_4.jpg',
+            item: 'Mango People T-shirt',
+            price: '52',
+            counts: '3',
+            id: 3
+        },
+        {
+            img: 'img/Layer_4.jpg',
+            item: 'Mango People T-shirt',
+            price: '52',
+            counts: '3',
+            id: 4
+        },
+        {
+            img: 'img/Layer_4.jpg',
+            item: 'Mango People T-shirt',
+            price: '52',
+            counts: '3',
+            id: 5
+        },
+        {
+            item: 'dress',
+            img: 'img/card_item.jpg',
+            counts: '1',
+            price: '400',
+            id: 6
+        },
+        {
+            item: 'paint',
+            img: 'img/card_item.jpg',
+            counts: '1',
+            price: '200',
+            id: 8
+        },
+        {
+            item: 'rait',
+            img: 'img/card_item.jpg',
+            counts: '3',
+            price: '500',
+            id: 7
+        }
+    ];
+
+
+    function catalogConstraction() {
+
+
+        if (product.length > 0) {
+            for (var u = 0; u < product.length; u++) {
+
+                var catalogImg = product[u].img;
+                var catalogName = product[u].item;
+                var catalogPrice = product[u].price;
+                var catalogItemId = product[u].id;
+
+                catalogTag(catalogImg, catalogName, catalogPrice, catalogItemId);
+
+            }
+        } else {
+            console.log('В массиве каталога ничего нет');
+        }
+
+
+    }
+
+    function catalogTag(catalogImg, catalogName, catalogPrice, catalogItemId) {
+        var $catalogItem = document.getElementById('catalog-item');
+        var $catalogBlock = document.createElement('div');
+        var $catalogAddBlock = document.createElement('div');
+        var $catalogAddItem = document.createElement('div');
+        var $catalogItemImg = document.createElement('div');
+        var $catalogItemName = document.createElement('span');
+        var $catalogItemPrice = document.createElement('span');
+        var $catalogItemImgTag = document.createElement('img');
+        var $catalogAddHref = document.createElement('a');
+        var $catalogAddImg = document.createElement('img');
+
+
+        $catalogItem.appendChild($catalogBlock);
+        $catalogBlock.classList.add('item_block');
+
+        $catalogBlock.appendChild($catalogAddBlock);
+        $catalogAddBlock.classList.add('block_add');
+
+        $catalogAddBlock.appendChild($catalogAddItem);
+        $catalogAddItem.classList.add('add_item');
+
+        $catalogAddItem.appendChild($catalogAddHref);
+        $catalogAddHref.classList.add('block_add_hover_text');
+        $catalogAddHref.href = '#';
+
+        $catalogAddHref.textContent = 'Add to card';
+
+        $catalogAddHref.appendChild($catalogAddImg);
+        $catalogAddImg.src = 'img/add_img.svg';
+        $catalogAddHref.id = catalogItemId;
+
+
+        $catalogAddHref.appendChild($catalogAddImg);
+
+        $catalogBlock.appendChild($catalogItemImg);
+        $catalogItemImg.appendChild($catalogItemImgTag);
+        $catalogItemImg.classList.add('item_img');
+        $catalogItemImgTag.src = catalogImg;
+
+        $catalogBlock.appendChild($catalogItemName);
+        $catalogBlock.appendChild($catalogItemPrice);
+        $catalogItemName.classList.add('item_text');
+        $catalogItemPrice.classList.add('item_text', 'item_span');
+        $catalogItemName.textContent = catalogName;
+        $catalogItemPrice.textContent = '$' + catalogPrice;
+    }
+
+    catalogConstraction();
+
 
 // two
 
 
     function arrayProduct() {
-        var product = [
-            {
-                item: 'dress',
-                img: 'img/card_item.jpg',
-                counts: '1',
-                price: '400'
-            },
-            {
-                item: 'paint',
-                img: 'img/card_item.jpg',
-                counts: '1',
-                price: '200'
-            },
-            {
-                item: 'rait',
-                img: 'img/card_item.jpg',
-                counts: '3',
-                price: '500'
-            }
-        ];
 
         if (product.length > 0) {
             var totalPrice = 0;
@@ -55,24 +189,22 @@ window.onload = function () {
         } else {
             var $cardButtonCheck = document.createElement('a');
             var $cardButtonShop = document.createElement('a');
-
+            var $cardEmptyString = document.createElement('div');
 
 
             $cardButtonCheck.classList.add('card_product__checkout');
             $cardButtonShop.classList.add('card_product__toCard', 'btn_empty_grey');
+            $cardEmptyString.classList.add('card_empty');
 
-
-
+            $cardList.appendChild($cardEmptyString);
             $cardList.appendChild($cardButtonCheck);
             $cardList.appendChild($cardButtonShop);
 
             $cardButtonCheck.textContent = 'checkout';
             $cardButtonShop.textContent = 'Go to cart';
-
+            $cardEmptyString.textContent = 'Корзина пуста';
         }
     }
-
-    var $cardList = document.getElementById('card_list');
 
 
     function cardFramework(nameProduct, imgProduct, countProduct, priceProduct) {
@@ -145,27 +277,29 @@ window.onload = function () {
     }
 
     function cardFrameworkBottom(totalPrice) {
-        var $cardTotalPrice = document.createElement('div');
+
         var $cardButtonCheck = document.createElement('a');
         var $cardButtonShop = document.createElement('a');
-        var $cardTotalPriceLeft = document.createElement('span');
-        var $cardTotalPriceRight = document.createElement('span');
 
-        $cardTotalPrice.classList.add('card_product__totalPrice');
+
+
+
         $cardButtonCheck.classList.add('card_product__checkout');
         $cardButtonShop.classList.add('card_product__toCard', 'btn_empty_grey');
-        $cardList.appendChild($cardTotalPrice);
-        $cardTotalPrice.appendChild($cardTotalPriceLeft);
-        $cardTotalPrice.appendChild($cardTotalPriceRight);
+
+
+
 
         $cardList.appendChild($cardButtonCheck);
         $cardList.appendChild($cardButtonShop);
         $cardButtonCheck.textContent = 'checkout';
         $cardButtonShop.textContent = 'Go to cart';
-        $cardTotalPriceLeft.textContent = 'TOTAL';
-        $cardTotalPriceRight.textContent = totalPrice;
+
+
     }
 
-
     arrayProduct();
+
+    var $addToCard = document.getElementById('1');
+    $addToCard.onclick = cleanerCard;
 };

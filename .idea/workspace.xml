@@ -9,41 +9,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4392324">
+    <splitter split-orientation="horizontal" split-proportion="0.4466951">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-learn/test-js-5.js">
+            <entry file="file://$PROJECT_DIR$/js-learn/test-js-6.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1037">
-                  <caret line="111" selection-start-line="111" selection-end-line="111" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-learn/test-js-4.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
-                  <caret line="15" selection-start-line="15" selection-end-line="16" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/_header.sass">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="722">
-                  <caret line="314" selection-start-line="314" selection-end-line="314" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-learn/index-js.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="841">
-                  <caret line="72" column="42" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
+                <state>
+                  <caret column="16" selection-start-column="16" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -52,16 +25,51 @@
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="-221">
-                  <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+                  <caret line="11" column="56" lean-forward="true" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/catalog.html">
+            <entry file="file://$PROJECT_DIR$/checkout.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="841">
-                  <caret line="547" column="7" selection-start-line="547" selection-start-column="7" selection-end-line="547" selection-end-column="7" />
+                <state>
+                  <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
+                  <folding>
+                    <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#4;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#5;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js-learn/test-6_1.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="291">
+                  <caret line="274" column="51" selection-start-line="274" selection-start-column="51" selection-end-line="274" selection-end-column="51" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Shopping Cart.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="17">
+                  <caret line="240" column="63" selection-start-line="240" selection-start-column="63" selection-end-line="240" selection-end-column="63" />
+                  <folding>
+                    <element signature="e#1505#1511#0" expanded="true" />
+                    <element signature="e#7558#7564#0" expanded="true" />
+                    <element signature="e#10566#10572#0" expanded="true" />
+                    <element signature="e#10861#10867#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -71,19 +79,10 @@
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/js-learn/test-js-5.js">
+            <entry file="file://$PROJECT_DIR$/js-learn/test-js-6.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="529">
-                  <caret line="62" column="13" lean-forward="true" selection-start-line="45" selection-start-column="11" selection-end-line="62" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/style.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="22331">
-                  <caret line="1380" selection-start-line="1380" selection-end-line="1380" />
+                <state relative-caret-position="-102">
+                  <caret line="9" column="9" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="9" selection-end-column="9" />
                 </state>
               </provider>
             </entry>
@@ -105,18 +104,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>breadcrumbs</find>
-      <find>.item_block</find>
-      <find>.item_img</find>
-      <find>add_item</find>
-      <find>.item_block:hover</find>
-      <find>facebook_share</find>
-      <find>console.log('');</find>
-      <find>one</find>
-      <find>two</find>
-      <find>&quot;</find>
-      <find>description_block_item</find>
-      <find>separator</find>
       <find>btn</find>
       <find>card_desc</find>
       <find>btn_empty</find>
@@ -135,6 +122,18 @@
       <find>$cardTotalPrice</find>
       <find>card_product</find>
       <find>card</find>
+      <find>$catalogItemImg</find>
+      <find>row-</find>
+      <find>$catalogItemName</find>
+      <find>item_block</find>
+      <find>row-item</find>
+      <find>1135</find>
+      <find>id</find>
+      <find>name</find>
+      <find>catalogProduct</find>
+      <find>getel</find>
+      <find>block_</find>
+      <find>calculatePrice</find>
     </findStrings>
     <replaceStrings>
       <replace>$main_width: 1140px</replace>
@@ -144,6 +143,8 @@
       <replace>arg1</replace>
       <replace>arg2</replace>
       <replace>'</replace>
+      <replace>item</replace>
+      <replace>product</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -159,7 +160,6 @@
         <option value="$PROJECT_DIR$/_shoping_cart.sass" />
         <option value="$PROJECT_DIR$/img/2-layers.svg" />
         <option value="$PROJECT_DIR$/style-test.sass" />
-        <option value="$PROJECT_DIR$/index-test.html" />
         <option value="$PROJECT_DIR$/_catalog.sass" />
         <option value="$PROJECT_DIR$/_footer.sass" />
         <option value="$PROJECT_DIR$/single page.html" />
@@ -171,14 +171,21 @@
         <option value="$PROJECT_DIR$/js-learn/test-js-4.js" />
         <option value="$PROJECT_DIR$/js-script.js" />
         <option value="$PROJECT_DIR$/_single_page.sass" />
-        <option value="$PROJECT_DIR$/style.sass" />
         <option value="$PROJECT_DIR$/_checkout.sass" />
         <option value="$PROJECT_DIR$/checkout.html" />
-        <option value="$PROJECT_DIR$/js-learn/index-js.html" />
         <option value="$PROJECT_DIR$/_var.sass" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/_header.sass" />
+        <option value="$PROJECT_DIR$/js-learn/index-js.html" />
+        <option value="$PROJECT_DIR$/js-learn/test-js-5_1.js" />
         <option value="$PROJECT_DIR$/js-learn/test-js-5.js" />
+        <option value="$PROJECT_DIR$/js-learn/leasson_5/index.html" />
+        <option value="$PROJECT_DIR$/index-test.html" />
+        <option value="$PROJECT_DIR$/style.sass" />
+        <option value="$PROJECT_DIR$/js-learn/leasson_5/test-6.1.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js-learn/test-js-6.js" />
+        <option value="$PROJECT_DIR$/js-learn/test-js-5_2.js" />
+        <option value="$PROJECT_DIR$/js-learn/test-6_1.js" />
       </list>
     </option>
   </component>
@@ -210,7 +217,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -227,6 +233,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -242,7 +249,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Мордор\Desktop\my first project\js-learn" />
       <recent name="C:\Users\Мордор\Desktop\my first project\img" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Мордор\Desktop\my first project\js-learn\leasson_5" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -338,12 +349,18 @@
       <workItem from="1546117747853" duration="2386000" />
       <workItem from="1546156118212" duration="2614000" />
       <workItem from="1546201289509" duration="1621000" />
-      <workItem from="1546422527458" duration="7446000" />
+      <workItem from="1546422527458" duration="10343000" />
+      <workItem from="1546435593952" duration="11150000" />
+      <workItem from="1546626432780" duration="2811000" />
+      <workItem from="1546800118898" duration="6996000" />
+      <workItem from="1546849060287" duration="711000" />
+      <workItem from="1546978720124" duration="2260000" />
+      <workItem from="1547019414002" duration="3300000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219097000" />
+    <option name="totallyTimeSpent" value="249222000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -360,7 +377,7 @@
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" weight="0.1684435" />
+      <window_info content_ui="combo" id="Project" order="2" weight="0.1716418" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.44420367" />
@@ -408,7 +425,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/block.rnc" />
     <entry file="file://$PROJECT_DIR$/normalize.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
@@ -454,20 +470,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index-test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="109" lean-forward="true" selection-start-line="16" selection-start-column="109" selection-end-line="16" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_catalog.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2125">
-          <caret line="125" column="25" selection-start-line="125" selection-start-column="25" selection-end-line="125" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_footer.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1309">
@@ -490,15 +492,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="404" column="4" selection-start-line="404" selection-start-column="4" selection-end-line="404" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-learn/test-script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1196">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -567,14 +560,135 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_var.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="66" column="16" lean-forward="true" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-learn/test-js-4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_header.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5338">
+          <caret line="314" selection-start-line="314" selection-end-line="314" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-learn/leasson_5/index-js.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-learn/index-js.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-learn/leasson_5/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-learn/leasson_5/test-js-5_2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-learn/test-js-5_1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="841">
+          <caret line="547" column="7" selection-start-line="547" selection-start-column="7" selection-end-line="547" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/add_img.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_catalog.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="125" column="25" selection-start-line="125" selection-start-column="25" selection-end-line="125" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="526" column="21" selection-start-line="526" selection-start-column="21" selection-end-line="526" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="82" lean-forward="true" selection-start-line="41" selection-start-column="66" selection-end-line="41" selection-end-column="82" />
+          <folding>
+            <element signature="n#div#1;n#!!top" />
+            <element signature="n#div#2;n#!!top" />
+            <element signature="n#div#3;n#!!top" />
+            <element signature="n#div#4;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="17175" column="12" selection-start-line="17175" selection-start-column="12" selection-end-line="17175" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-learn/test-script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1043">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-learn/test-js-5_2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
+          <caret line="64" column="12" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
+          <caret line="62" column="12" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
+          <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/checkout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="19" />
+        <state>
+          <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
           <folding>
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
@@ -586,103 +700,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-221">
+          <caret line="11" column="56" lean-forward="true" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Shopping Cart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-841">
+        <state relative-caret-position="17">
           <caret line="240" column="63" selection-start-line="240" selection-start-column="63" selection-end-line="240" selection-end-column="63" />
           <folding>
             <element signature="e#1505#1511#0" expanded="true" />
             <element signature="e#7558#7564#0" expanded="true" />
             <element signature="e#10566#10572#0" expanded="true" />
             <element signature="e#10861#10867#0" expanded="true" />
-            <element signature="e#11581#11587#0" expanded="true" />
-            <element signature="e#11904#11911#0" expanded="true" />
-            <element signature="e#11962#11968#0" expanded="true" />
-            <element signature="e#11973#11979#0" expanded="true" />
-            <element signature="e#12005#12011#0" expanded="true" />
-            <element signature="e#12058#12065#0" expanded="true" />
-            <element signature="e#13547#13553#0" expanded="true" />
-            <element signature="e#13595#13601#0" expanded="true" />
-            <element signature="e#13618#13624#0" expanded="true" />
-            <element signature="e#13735#13741#0" expanded="true" />
-            <element signature="e#14274#14280#0" expanded="true" />
-            <element signature="e#14622#14627#0" expanded="true" />
-            <element signature="e#14627#14633#0" expanded="true" />
-            <element signature="e#14797#14803#0" expanded="true" />
-            <element signature="e#14879#14885#0" expanded="true" />
-            <element signature="e#15711#15717#0" expanded="true" />
-            <element signature="e#15717#15723#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.sass">
+    <entry file="file://$PROJECT_DIR$/js-learn/test-js-6.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="495" column="32" lean-forward="true" selection-start-line="495" selection-start-column="32" selection-end-line="495" selection-end-column="32" />
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_var.sass">
+    <entry file="file://$PROJECT_DIR$/js-learn/test-6_1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22331">
-          <caret line="1380" selection-start-line="1380" selection-end-line="1380" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1064">
-          <caret line="10328" column="4" selection-start-line="10328" selection-start-column="4" selection-end-line="10328" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-learn/index-js.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="841">
-          <caret line="72" column="42" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="841">
-          <caret line="547" column="7" selection-start-line="547" selection-start-column="7" selection-end-line="547" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-learn/test-js-4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="15" selection-start-line="15" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_header.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="314" selection-start-line="314" selection-end-line="314" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-learn/test-js-5.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="62" column="13" lean-forward="true" selection-start-line="45" selection-start-column="11" selection-end-line="62" selection-end-column="13" />
+        <state relative-caret-position="291">
+          <caret line="274" column="51" selection-start-line="274" selection-start-column="51" selection-end-line="274" selection-end-column="51" />
         </state>
       </provider>
     </entry>
