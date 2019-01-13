@@ -145,10 +145,12 @@
 // console.log(x == y); // будет false, т.к. null это отделный тип, и он не будет равен типу Number
 
 //задание 8 - четсно подсмотрел с урока, не могу пока представить через условие сам
-function fun(alpha, beta) {
-    if (beta === 1) {
-        return alpha;
-    } else {
-        return fun(alpha, beta - 1);
-    }
-}
+// function fun(alpha, beta) {
+//     if (beta === 1) {
+//         return alpha;
+//     } else {
+//         return fun(alpha, beta - 1);
+//     }
+// }
+
+
