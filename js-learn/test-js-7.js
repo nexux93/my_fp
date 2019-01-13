@@ -55,7 +55,7 @@ window.onload = function () {
     var $totalSubPrice = document.getElementById('subTotal');
     var subPrice = 0;
     var totalPrice = 0;
-    var priceTotal = 0;
+    var inputElement;
 
 
     function deadStar(event) {
@@ -69,12 +69,50 @@ window.onload = function () {
 
                 } else if (target.className == 'product_list_item') {
                     target.remove();
+                    break;
+                }
+                target = target.parentNode;
+            }
+        } else if (targetActoin == 'add') {
+
+            while (target != 'product_list_item_right') {
+                if (target.className == 'product_list_item_right') {
+                    var inputChild = target.firstElementChild;
+                        if (inputChild.className == 'description_block_item') {
+                            var inputDiv = inputChild.nextElementSibling;
+                            inputElement = inputDiv.firstElementChild;
+                            inputElement.value++;
+                            break;
+
+                        }
+                    }
+                target = target.parentNode;
+                }
+
+            } else if (targetActoin == 'minus') {
+
+            while (target != 'product_list_item_right') {
+                if (target.className == 'product_list_item_right') {
+                    var inputChild = target.firstElementChild;
+                    if (inputChild.className == 'description_block_item') {
+                        var inputDiv = inputChild.nextElementSibling;
+                        inputElement = inputDiv.firstElementChild;
+                        if (inputElement.value == 1){
+                            inputElement.value = '1';
+                            break;
+                        } else {
+                        inputElement.value--;
+                        }
+                        break;
+
+                    }
                 }
                 target = target.parentNode;
             }
         }
+        }
         checkChildrenElement();
-    }
+
 
 
     function checkChildrenElement() {
@@ -112,7 +150,7 @@ window.onload = function () {
                     productShopingCount)
             }
 
-             priceTotal = totalSumm();
+            priceTotal = totalSumm();
             $totalPrice.textContent = '$' + priceTotal;
             $totalSubPrice.textContent = '$' + priceTotal;
 
@@ -150,6 +188,8 @@ window.onload = function () {
         var $ItemSubTotal = document.createElement('div');
         var $ItemActionButt = document.createElement('div');
         var $ItemDelete = document.createElement('i');
+        var $ItemAdd = document.createElement('i');
+        var $ItemMinus = document.createElement('i');
 
         $productListItem.classList.add('product_list_item');
         $productListItemLeft.classList.add('product_list_item_left');
@@ -162,12 +202,14 @@ window.onload = function () {
         $ItemSpecSizeRate.classList.add('specification_concern');
         $productListItemRight.classList.add('product_list_item_right');
         $ItemPrice.classList.add('description_block_item');
-        $ItemCount.classList.add('description_block_item');
+        $ItemCount.classList.add('description_block_item', 'input');
         $ItemCountInput.classList.add('product_price_input');
         $ItemShipping.classList.add('description_block_item');
         $ItemSubTotal.classList.add('description_block_item');
-        $ItemActionButt.classList.add('description_block_item');
+        $ItemActionButt.classList.add('description_block_item', 'action_button');
         $ItemDelete.classList.add('fas', 'fa-times-circle');
+        $ItemAdd.classList.add('fas', 'fa-plus');
+        $ItemMinus.classList.add('fas', 'fa-minus');
 
         $ItemImg.src = prodtctShopingImg;
         $ItemSpecColor.textContent = 'Color:' + ' ';
@@ -176,9 +218,13 @@ window.onload = function () {
         $ItemSpecSizeRate.textContent = productShopingSize;
         $ItemPrice.textContent = '$' + productShopingPrice;
         $ItemCountInput.type = 'number';
+        $ItemCountInput.min = '0';
+        $ItemCountInput.disabled = 'disabled';
         $ItemCountInput.value = productShopingCount;
         $ItemSubTotal.textContent = subPrice;
         $ItemDelete.setAttribute('data-action', 'delete');
+        $ItemAdd.setAttribute('data-action', 'add');
+        $ItemMinus.setAttribute('data-action', 'minus');
 
         $ItemSpecColor.appendChild($ItemSpecColorName);
         $ItemSpecSize.appendChild($ItemSpecSizeRate);
@@ -201,6 +247,8 @@ window.onload = function () {
 
         $productListItemRight.appendChild($ItemActionButt);
         $ItemActionButt.appendChild($ItemDelete);
+        $ItemActionButt.appendChild($ItemAdd);
+        $ItemActionButt.appendChild($ItemMinus);
 
 
     }
