@@ -5,7 +5,7 @@ window.onload = function () {
             img: 'img/product_item.jpg',
             item: 'Mango People T-shirt',
             price: '52',
-            counts: '3',
+            counts: '1',
             id: 1,
             color: 'red',
             size: 'XXL'
@@ -33,7 +33,7 @@ window.onload = function () {
             img: 'img/product_item.jpg',
             item: 'Mango People T-shirt',
             price: '52',
-            counts: '3',
+            counts: '4',
             id: 4,
             color: 'red',
             size: 'XXL'
@@ -42,7 +42,7 @@ window.onload = function () {
             img: 'img/product_item.jpg',
             item: 'Mango People T-shirt',
             price: '52',
-            counts: '3',
+            counts: '5',
             id: 5,
             color: 'red',
             size: 'XXL'
@@ -53,6 +53,7 @@ window.onload = function () {
     var $productChildren = document.getElementById('product_row');
     var $totalPrice = document.getElementById('total');
     var $totalSubPrice = document.getElementById('subTotal');
+    var subPrice = 0;
     var totalPrice = 0;
     var priceTotal = 0;
 
@@ -81,11 +82,11 @@ window.onload = function () {
         var childrenLenght = $productChildren.children.length;
 
         if (childrenLenght === 0) {
-            var $spanCardEmpty = document.createElement('span');
+            var $spanCardEmpty = document.createElement('div');
 
             $spanCardEmpty.textContent = 'Корзина пуста';
 
-            $listAction.appendChild($spanCardEmpty);
+            $productChildren.appendChild($spanCardEmpty);
 
         }
 
@@ -101,6 +102,8 @@ window.onload = function () {
                 var productShopingSize = product[u].size;
                 var productShopingPrice = product[u].price;
                 var productShopingCount = product[u].counts;
+
+                subPrice = productShopingPrice * productShopingCount;
 
                 shopingCardConstructor(prodtctShopingImg,
                     productShopingColor,
@@ -125,6 +128,8 @@ window.onload = function () {
                                     productShopingPrice,
                                     productShopingCount,
                                     priceTotal) {
+
+        subPrice = productShopingPrice * productShopingCount;
 
         var $productListItem = document.createElement('div');
         var $productListItemLeft = document.createElement('div');
@@ -172,7 +177,7 @@ window.onload = function () {
         $ItemPrice.textContent = '$' + productShopingPrice;
         $ItemCountInput.type = 'number';
         $ItemCountInput.value = productShopingCount;
-        $ItemSubTotal.textContent = priceTotal;
+        $ItemSubTotal.textContent = subPrice;
         $ItemDelete.setAttribute('data-action', 'delete');
 
         $ItemSpecColor.appendChild($ItemSpecColorName);
