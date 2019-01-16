@@ -26,7 +26,7 @@ function b(x, y, a) {
     alert(a);
 }
 b(1, 2, 3);
-Ответ:
+Ответ:3
 
 5.
 *
@@ -34,3 +34,4 @@ function a() {
     alert(this);
 }
 a.call(null);
+Ответ: Null
