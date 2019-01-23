@@ -39,8 +39,8 @@ window.onload = function () {
     Container.prototype.delete = function () {
         var element = this.getElement();
 
-        if (!element) {
-            element.remove();
+        if (element) {
+            element.parentElement.removeChild(element);
         }
     };
 
