@@ -1,85 +1,98 @@
-function Container(id, className, tagName) {
-    // публинчый
-    this.id = 'some';
-    this.className = 'some';
+// public, protected, private
+window.onload = function () {
 
 
-    this._tagName = tagName;
+    function Container(id, className, tagName) {
+        // public
+        this.id = id;
+        this.className = className;
 
-    // приватный
-    var element;
+        // protected
+        this._tagName = tagName;
 
-    this.getElement = function () {
+        // private
+        var element;
+
+        this.getElement = function () {
+            return element;
+        };
+
+        this.setElement = function (newValue) {
+            element = newValue;
+        }
+    }
+
+    Container.prototype.render = function () {
+        var element = this.getElement();
+
+        if (!element) {
+            element = document.createElement(this._tagName);
+            element.id = this.id;
+            element.className = this.className;
+
+            this.setElement(element);
+        }
+
         return element;
     };
 
-    this.setElement = function () {
-        element = newValue;
+    Container.prototype.delete = function () {
+        var element = this.getElement();
+
+        if (!element) {
+            element.remove();
+        }
+    };
+
+    function Menu(id, className, items) {
+        Container.call(this, id, className, 'ul');
+
+        // protected
+        this._items = items;
     }
-}
 
-Container.prototype.render = function () {
-    var element = this.getElement();
+    Menu.prototype = Object.create(Container.prototype);
+    Menu.prototype.render = function () {
+        var container = Container.prototype.render.call(this);
 
-    if (!element) {
-        element = document.createElement(this._tagName);
-        element.id = this.id;
-        element.className = this.className;
+        this._items.forEach(function (item) {
+            if (item instanceof Container) {
+                container.appendChild(item.render());
+            }
+        });
 
-        this.setElement(element);
+        return container;
+    };
+
+    function MenuItem(className, link, title) {
+        Container.call(this, '', className, 'li');
+
+        this.link = link;
+        this.title = title;
     }
-    return element;
+
+    MenuItem.prototype = Object.create(Container.prototype);
+    MenuItem.prototype.render = function () {
+        var container = Container.prototype.render.call(this);
+
+        var a = document.createElement('a');
+        a.textContent = this.title;
+        a.href = this.link;
+
+        container.appendChild(a);
+
+        return container;
+    };
+
+
+    var menuItem1 = new MenuItem('menu-item', '/', 'Home');
+    var menuItem2 = new MenuItem('menu-item', '/news', 'News');
+    var menuItem3 = new MenuItem('menu-item', '/blog', 'Blog');
+    var menuItem4 = new MenuItem('menu-item', '/blog', 'Blog');
+
+    var menu = new Menu('menu', 'menu active', [menuItem1, menuItem2, menuItem3, menuItem4]);
+
+    document.body.appendChild(menu.render());
+
 
 };
-
-function Menu(id, className, items) {
-    Container.call(this, id, className, 'ul');
-// уславливаемся что это защищённый
-    this._items = items;
-}
-
-Menu.prototype = Object.create(Container.prototype);
-Menu.prototype.render = function () {
-    var container = Container.prototype.render.call(this);
-
-    this._items.forEach(function (item) {
-        if (item instanceof MenuItem)
-            container.appendChild(item.render());
-    });
-    return container;
-};
-
-
-function MenuItem(className, link, title) {
-    Container.call(this, '', className, 'li');
-    this.link = link;
-    this.title = title;
-}
-
-MenuItem.prototype = Object.create(Container.prototype);
-MenuItem.prototype.render = function () {
-    var container = Container.prototype.render.call(this);
-
-    var a = document.createElement('a');
-    a.textContent = this.title;
-    a.href = this.link;
-
-    container.appendChild(a);
-
-    return container;
-};
-
-
-var menuItem1 = new Menu('menu-item', '/home', 'home');
-var menuItem2 = new Menu('menu-item', '/dooom', 'dooom');
-var menuItem3 = new Menu('menu-item', '/boom', 'boom');
-
-var menu = new Menu('menu', 'menu active', [menuItem1,
-    menuItem2,
-    menuItem3
-]);
-
-document.body.appendChild(menu.render());
-
-
-
