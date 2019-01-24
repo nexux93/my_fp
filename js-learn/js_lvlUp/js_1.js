@@ -41,7 +41,9 @@ window.onload = function () {
 
         if (element) {
             element.parentElement.removeChild(element);
+            this.setElement(null);
         }
+
     };
 
     function Menu(id, className, items) {
@@ -84,15 +86,51 @@ window.onload = function () {
         return container;
     };
 
+    function SubMenu(id, className, items, link, title) {
+
+        MenuItem.call(this, 'item', link, title);
+        Menu.call(this, id, className, items);
+
+    }
+
+    SubMenu.prototype = Object.create(Menu.prototype);
+    SubMenu.prototype.render = function (id, className, items, link, title) {
+
+        if (this.link && this.title) {
+
+            var menuItem = new MenuItem('item name', '/homehone', 'item').render();
+            var menu = Menu.prototype.render.call(this);
+
+            menuItem.appendChild(menu);
+
+            return menuItem;
+
+        } else {
+
+            return Menu.prototype.render.call(this);
+
+        }
+    };
+
 
     var menuItem1 = new MenuItem('menu-item', '/', 'Home');
     var menuItem2 = new MenuItem('menu-item', '/news', 'News');
-    var menuItem3 = new MenuItem('menu-item', '/blog', 'Blog');
+    var menuItem3 = new MenuItem('menu-item', '/efw', 'wdfqyt');
     var menuItem4 = new MenuItem('menu-item', '/blog', 'Blog');
 
-    var menu = new Menu('menu', 'menu active', [menuItem1, menuItem2, menuItem3, menuItem4]);
+    var subsubMenu = new SubMenu('', 'first', [
+        menuItem1
+    ], '/', 'first');
 
-    document.body.appendChild(menu.render());
+    var superMenu = new SubMenu('11', 'submenu', [
+        menuItem1,
+        menuItem2,
+        menuItem3,
+        menuItem4,
+        subsubMenu
+    ]);
+
+    document.body.appendChild(superMenu.render());
 
 
 };
