@@ -131,5 +131,8 @@ window.onload = function () {
 
     document.body.appendChild(menu.render());
 
-
 };
+
+var xhr = new XMLHttpRequest();
+
+xhr.open('GET');
