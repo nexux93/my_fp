@@ -1,6 +1,5 @@
 // public, protected, private
-
-
+// 1
 
 function Container(id, className, tagName) {
     debugger;
@@ -66,7 +65,7 @@ Menu.prototype.render = function () {
     return container;
 };
 
-function MenuItem(className, title, link ) {
+function MenuItem(className, title, link) {
     Container.call(this, '', className, 'li');
 
     this.link = link;
@@ -131,8 +130,35 @@ window.onload = function () {
 
     document.body.appendChild(menu.render());
 
+// 2
+    var gallery = document.getElementById('gallery');
+
+    function getImage(imageArray) {
+
+        var xhr = new XMLHttpRequest();
+
+        xhr.open('GET', 'js_lvlUp/test.json');
+        xhr.send();
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                imageArray = JSON.parse(xhr.responseText);
+
+                imageArray.forEach(function (imageArray) {
+                    var img = document.createElement('img');
+                    var a = document.createElement('a');
+                    a.href = imageArray.src;
+                    img.title = imageArray.name;
+                    img.src = imageArray.src;
+
+                    a.appendChild(img);
+                    gallery.appendChild(a);
+
+                })
+            }
+        };
+
+    }
+
+    getImage();
 };
-
-var xhr = new XMLHttpRequest();
-
-xhr.open('GET');
