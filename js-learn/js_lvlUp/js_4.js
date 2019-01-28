@@ -1,26 +1,10 @@
 (function ($) {
     $().ready(function () {
-        $('.tabs').on('click', 'li:not(.active)', function () {
-            var action = $(this).data('action');
-            switch (action) {
-                case '1':
-                    $(this).addClass('active').sibling().remove('.active');
-                    break;
-                case '2':
-                    $(this).addClass('active').sibling().remove('.active');
-                    break;
-                case '3':
-                    $(this).addClass('active').sibling().remove('.active');
-                    break;
-                case '4':
-                    $(this).addClass('active').sibling().remove('.active');
-                    break;
-                default:
-                    console.log('мимо');
-            }
+        $('ul li').click('li:not(.active)', function () {
+$(this).addClass('active');
+var  t = $(this).siblings().removeClass('active');
 
-            $().addClass('active').sibling().remove('.active');
-        })
+        });
 
     });
 })(jQuery);
