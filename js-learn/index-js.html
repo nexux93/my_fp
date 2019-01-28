@@ -13,6 +13,14 @@
             height: 20%;
         }
 
+        .content {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
         .sucsess {
             border: green solid 2px;
         }
@@ -20,6 +28,7 @@
         .denied {
             border: red solid 2px;
         }
+
     </style>
 </head>
 <body>
@@ -45,15 +54,49 @@
 <!--</div>-->
 
 <ul>
-    <li class="sucses">1</li>
-    <li class="sucses">2</li>
-    <li class="sucses">3</li>
-    <li class="sucses">4</li>
+    <li class="sucses" data-active="1">Darth Vader</li>
+    <li class="sucses" data-active="2">Генера́л Гри́вус</li>
+    <li class="sucses" data-active="3">Мандалор</li>
+    <li class="sucses" data-active="4">Кандерус Ордо</li>
 </ul>
-<div class="content"></div>
-<div class="content"></div>
-<div class="content"></div>
-<div class="content"></div>
+<div class="global-content">
+    <div class="content">Darth Vader is a fictional character in the Star Wars franchise. He is a primary antagonist in
+        the original trilogy, but, as Anakin Skywalker, is the main protagonist of the prequel trilogy. Star Wars
+        creator George Lucas has collectively referred to the first six episodic films of the franchise as "the tragedy
+        of Darth Vader."[1]
+
+        Originally a Jedi prophesied to bring balance to the Force, Anakin Skywalker is lured to the dark side of the
+        Force by Palpatine, who is secretly a Sith Lord. After fighting a lightsaber battle with his former mentor
+        Obi-Wan Kenobi in which he is dismembered, Vader is transformed into a cyborg. He then serves the Galactic
+        Empire as Darth Vader until he redeems himself by saving his son, Luke Skywalker, and killing Palpatine,
+        sacrificing his own life in the process.[2] He is also the father of Princess Leia Organa, the secret husband of
+        Padmé Amidala, and grandfather of Kylo Ren, the main villain of the Star Wars sequel trilogy.
+    </div>
+    <div class="content">Генера́л Гри́вус (англ. General Grievous, имя при рождении[1] — Кимаен джай Шилал (англ. Qymaen
+        jai Sheelal)) — вымышленный персонаж вселенной «Звёздных войн». Является главным антагонистом в фильме «Звёздные
+        войны. Эпизод III: Месть ситхов», наряду с графом Дуку, Дартом Вейдером и канцлером Палпатином. В фильме был
+        озвучен Мэттью Вудом. Согласно DVD, Джордж Лукас проинструктировал свою творческую команду создать врага,
+        предвещавшего преобразование Энакина Скайуокера в Дарта Вейдера: тяжёлое дыхание, тело киборга, ненависть к
+        джедаям и его соблазнение на сторону зла.
+
+        Несмотря на облик, Генерал Гривус был обучен бою на световых мечах графом Дуку, и был очень искусен в обращении
+        с ними. В качестве трофея забирал у убитого джедая его меч. Способный пользоваться сразу четырьмя световыми
+        мечами и имеющий поразительные реакцию и скорость, Гривус стал смертельным противником для джедаев.
+    </div>
+    <div class="content">Мандалор (Манд'алор на мандо'а) — титул, присваивающийся лидеру мандалорцев и означавший
+        «единственный правитель». Титул происходил от имени мифической фигуры Мандалора Первого, чьи воины захватили
+        планету Мандалор. В конечном итоге этот термин стали применять ко всем лидерам мандалорцев, третьим из которых
+        был Мандалор Неукротимый, который правил во время Великой войны ситхов и при котором традиция закрепилась.
+        Последним известным носителем титула Мандалора был Яга Очес, который руководил мандалорцами во время
+        Ситхо-имперской войны.
+    </div>
+    <div class="content">Кандерус Ордо (англ. Canderous Ordo) — известный также как Мандалор Хранитель. Был лидером
+        мандалорцев в эпоху после Гражданской войны джедаев и первым Мандалором после окончания Мандалорских войн.
+        Ветеран-солдат, он воевал в ходе обоих конфликтов, а также в Великой войне ситхов. Он присоединился к Ревану в
+        его миссии — найти и уничтожить «Звёздную кузницу» и путешествовал с джедаем-Изгнанницей во время первой чистки
+        джедаев.[1][3]
+    </div>
+</div>
 </body>
 </html>
 
