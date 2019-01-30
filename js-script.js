@@ -14,6 +14,7 @@
         }, function () {
             $(this).attr('src', 'img/Forma_1.svg');
         });
+        $('ul.menu').hover()
     });
 
 })(jQuery);

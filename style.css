@@ -173,6 +173,9 @@ header {
 .card_item__img {
   display: flex;
   flex-grow: 1; }
+.card_item__img img {
+  width: 72px;
+  height: 85px; }
 .card_item__desc {
   display: flex;
   flex-direction: column;
@@ -237,10 +240,6 @@ header {
   border: solid 1px #e8e8e8;
   display: none; }
 
-.mega_menu_link:hover .mega_menu_container {
-  display: block;
-  transition: top 1s ease-out 0.5s; }
-
 .mega_menu_container::before {
   content: "";
   width: 12px;
@@ -302,6 +301,20 @@ header {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase; }
+
+.number {
+  position: absolute;
+  top: -6px;
+  right: -12px;
+  font-size: 12px;
+  background: #f16d7f;
+  height: 19px;
+  width: 19px;
+  color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 41px;
+  justify-content: center; }
 
 .line-he, .product_btn_clear, .product_btn_continue {
   line-height: 50px;

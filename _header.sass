@@ -175,8 +175,10 @@ header
     font-size: 12px
     font-weight: 400
     text-transform: uppercase
+
   &__count
     padding-right: 4px
+
   &__summ
     padding-left: 4px
 
@@ -187,7 +189,9 @@ header
   &__img
     display: flex
     flex-grow: 1
-
+  &__img img
+    width: 72px
+    height: 85px
   &__desc
     display: flex
     flex-direction: column
@@ -256,10 +260,6 @@ header
   display: none
 
 
-.mega_menu_link:hover .mega_menu_container
-  display: block
-  transition: top 1s ease-out 0.5s
-
 .mega_menu_container::before
   content: ""
   width: 12px
@@ -321,3 +321,17 @@ header
   font-size: 14px
   font-weight: 700
   text-transform: uppercase
+
+.number
+  position: absolute
+  top: -6px
+  right: -12px
+  font-size: 12px
+  background: #f16d7f
+  height: 19px
+  width: 19px
+  color: white
+  display: flex
+  align-items: center
+  border-radius: 41px
+  justify-content: center
