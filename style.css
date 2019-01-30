@@ -51,7 +51,8 @@ header {
   font-family: Lato;
   font-size: 14px;
   font-weight: 500;
-  letter-spacing: 0.35px; }
+  letter-spacing: 0.35px;
+  cursor: pointer; }
 
 .caret {
   padding-left: 5px; }
@@ -81,10 +82,11 @@ header {
 .card_img {
   margin-right: 22px;
   display: block;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
 
 .card_product {
-  display: flex;
+  display: none;
   flex-direction: column;
   cursor: default;
   position: absolute;
@@ -197,10 +199,10 @@ header {
   background-color: #f16d7f;
   letter-spacing: 0.38px;
   padding: 5px 17px;
-  transition: background-color 1s linear; }
+  transition: background-color 0.5s linear; }
 
 .btn-pink:hover {
-  background-color: #ff0000 !important; }
+  background-color: #fbb6bf !important; }
 
 .nav_back {
   height: 51px;
@@ -208,6 +210,9 @@ header {
 
 .menu {
   list-style-type: none; }
+
+.menu li a:hover {
+  color: #f16d7f; }
 
 .menu_list {
   padding: 0 20px;
@@ -423,6 +428,9 @@ footer {
 
 .linken_share {
   background-color: #eeeeee; }
+
+.footer_link:hover {
+  color: #f16d7f; }
 
 .block_product {
   width: 1140px; }
@@ -1257,7 +1265,8 @@ ul li {
 .item_span {
   padding-bottom: 21px;
   color: #f16d7f;
-  font-weight: 700; }
+  font-weight: 700;
+  cursor: default; }
 
 .block_add {
   position: relative; }
@@ -1327,10 +1336,7 @@ ul li {
 
 .sale_block_desc_text {
   display: flex;
-  margin-top: 48px;
-  margin-right: 20px;
-  margin-left: 43px;
-  margin-bottom: 48px;
+  margin: 48px 20px 48px 43px;
   color: white; }
 
 .sale_block_desc {
@@ -1641,7 +1647,13 @@ details[open] > summary::after {
   right: 10px;
   color: white;
   cursor: pointer;
-  border: 1px solid #f16d7f; }
+  border: 1px solid #f16d7f;
+  transition: 1s; }
+
+.subscrible_button:hover {
+  background: #fbb6bf;
+  transition: 1s;
+  border: 1px solid #fbb6bf; }
 
 .breadcrumbs {
   line-height: 20px;
