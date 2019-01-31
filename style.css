@@ -118,7 +118,11 @@ header {
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-top: 32px; }
+    margin-top: 32px;
+    transition: 0.5s; }
+  .card_product__checkout:hover {
+    color: #ffffff;
+    background-color: #ef5b70; }
   .card_product__toCard {
     margin-top: 11px; }
 
@@ -132,7 +136,13 @@ header {
   font-family: Lato;
   font-size: 14px;
   font-weight: 700;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  transition: 0.5s; }
+
+.btn_empty_grey:hover {
+  color: #eaeaea;
+  border: 1px solid #4a4a4a;
+  background-color: #4a4a4a; }
 
 .card_product::before {
   content: "";

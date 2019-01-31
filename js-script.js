@@ -5,7 +5,7 @@
             var target = $(event.target);
 
             if (target.is('#card img')) {
-                $('#card_list').fadeToggle('slow', 'linear');
+                $('#card_list').fadeToggle('fast', 'linear');
             }
 
         }).hover(function () {

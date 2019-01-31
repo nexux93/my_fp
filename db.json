@@ -27,6 +27,13 @@
       "category": "Clone_weapon",
       "imgBig": "img/Layer_4.jpg",
       "imgSmall":"img/Layer_4.jpg"
+    },
+    {
+      "name": "Вращающаяся бластерная пушка Z-6",
+      "price": "85000",
+      "category": "Clone_weapon",
+      "imgBig": "img/Layer_4.jpg",
+      "imgSmall":"img/Layer_4.jpg"
     }
   ],
   "cart": [

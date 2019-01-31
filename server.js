@@ -1,7 +1,7 @@
 (function ($) {
     $().ready(function () {
         var $catItem = $('#catalog-item');
-        var $cartItem = $('#card_list');
+        var $cartList = $('#card_list');
 
         function bilderCatalog() {
             $.ajax({
@@ -31,6 +31,19 @@
                 }
             })
         }
+
+        function bilderCart() {
+
+        }
+
+
+
+        function bilderCartButton() {
+            var $cardButtonCheck = $('<a/>').addClass('card_product__checkout').text('checkout').attr('href', 'checkout.html');
+            var $cardButtonShop = $('<a/>').addClass('card_product__toCard btn_empty_grey').text('Go to cart').attr('href', '#');
+            $($cartList).append($cardButtonCheck, $cardButtonShop);
+        }
+        bilderCartButton();
         bilderCatalog();
     });
 
