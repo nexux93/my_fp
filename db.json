@@ -1,39 +1,44 @@
 {
   "goods": [
     {
+      "id": 1,
       "name": "Бластерная винтовка DC-15A",
       "price": "5000",
       "category": "Clone_weapon",
       "imgBig": "img/Layer_4.jpg",
-      "imgSmall": "img/Layer_4.jpg"
+      "imgSmall": "img/card_item.jpg"
     },
     {
+      "id": 2,
       "name": "Ручной бластер DC-17",
       "price": "35000",
       "category": "Clone_weapon",
       "imgBig": "img/Layer_4.jpg",
-      "imgSmall":"img/Layer_4.jpg"
+      "imgSmall": "img/card_item.jpg"
     },
     {
+      "id": 3,
       "name": "Бластерная винтовка WESTAR-M5",
       "price": "25000",
       "category": "Clone_weapon",
       "imgBig": "img/Layer_4.jpg",
-      "imgSmall":"img/Layer_4.jpg"
+      "imgSmall": "img/card_item.jpg"
     },
     {
+      "id": 4,
       "name": "Вращающаяся бластерная пушка Z-6",
       "price": "85000",
       "category": "Clone_weapon",
       "imgBig": "img/Layer_4.jpg",
-      "imgSmall":"img/Layer_4.jpg"
+      "imgSmall": "img/card_item.jpg"
     },
     {
+      "id": 5,
       "name": "Вращающаяся бластерная пушка Z-6",
       "price": "85000",
       "category": "Clone_weapon",
       "imgBig": "img/Layer_4.jpg",
-      "imgSmall":"img/Layer_4.jpg"
+      "imgSmall": "img/card_item.jpg"
     }
   ],
   "cart": [

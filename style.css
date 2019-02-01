@@ -1298,7 +1298,8 @@ ul li {
   border: solid 1px white;
   padding: 11px 15px;
   color: white;
-  display: flex; }
+  display: flex;
+  cursor: pointer; }
 
 .add_img {
   padding-right: 8px; }
