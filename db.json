@@ -41,7 +41,6 @@
       "imgSmall": "img/card_item.jpg"
     }
   ],
-  "cart": [
-
-  ]
+  "cart": [],
+  "response": []
 }

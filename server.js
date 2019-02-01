@@ -10,7 +10,9 @@
                 dataType: 'json',
                 success: function (goods) {
                     goods.forEach(function (item) {
-                        var $catalogAddHref = $('<span/>').addClass('block_add_hover_text').data(item).text('Add to cart');
+                        // buy button
+                        var $catalogAddHref = $('<span/>').addClass('block_add_hover_text').data(item).attr('id', 'card-' + item.id).text('Add to cart');
+
                         var $catalogAddImg = $('<img alt="" src="img/add_img.svg">');
                         var $catalogAddItem = $('<div/>').addClass('add_item');
                         var $catalogAddBlock = $('<div/>').addClass('block_add');
@@ -48,10 +50,10 @@
                         var $cardDescSumm = $('<span/>').addClass('card_desc__summ');
                         var $cardDeleteImg = $('<i/>').addClass('fas fa-times-circle');
                         // button buy
-                        var $cardDeleteHref = $('<a/>').addClass('').append($cardDeleteImg).attr('id', 'card' + item.id);
+                        var $cardDeleteHref = $('<a/>').addClass('').append($cardDeleteImg).attr('id', 'cart-' + item.id);
 
                         var $cardDescPrice = $('<div/>').addClass('card_desc__price').append($cardDescCount, $cardDescSumm);
-                        var $cardDelete = $('<div/>').addClass('card_item__delete').append($cardDeleteHref);
+                        var $cardDelete = $('<div/>').addClass('card_item__delete').append($cardDeleteHref).data(item);
                         var $cardImgItem = $('<img alt="" src="">').attr('src', item.imgSmall);
                         var $cardDesc = $('<div/>').addClass('card_item__desc card_desc').append($cardDescName,
                             $cardDescRespect,
@@ -64,32 +66,44 @@
                         $($cartList).append($cardProduct, $cardSeparator);
                     })
                 }
-            })
+            });
+
         }
 
+        $($cartList).on('click', '.card_item__delete', function () {
 
-        // function bilderCartButton() {
-        //     var $cardButtonCheck = $('<a/>').addClass('card_product__checkout').text('checkout').attr('href', 'checkout.html');
-        //     var $cardButtonShop = $('<a/>').addClass('card_product__toCard btn_empty_grey').text('Go to cart').attr('href', '#');
-        //     $($cartList).append($cardButtonCheck, $cardButtonShop);
-        // }
+            var good = $(this).data();
+            $.ajax({
+                url: 'http://localhost:3000/cart/' + good.id,
+                type: 'DELETE',
+                success: function () {
+                    bilderCart();
+                }
+            })
+        });
+
+        function bilderCartButton() {
+            var $cardButtonCheck = $('<a/>').addClass('card_product__checkout').text('checkout').attr('href', 'checkout.html');
+            var $cardButtonShop = $('<a/>').addClass('card_product__toCard btn_empty_grey').text('Go to cart').attr('href', '#');
+            $($cartList).append($cardButtonCheck, $cardButtonShop);
+        }
 
 
         bilderCatalog();
 
         $catalItem.on('click', '.block_add_hover_text', function () {
-            console.log(111);
+
             var good = $(this).data();
 
-            if ($('#cart-' + good.id).length) {
-
+            if ($('#cart-1').length > 0) {
+                console.log(111);
                 var goodIncart = $('#cart-' + good.id).data();
 
                 $.ajax({
-                    url: 'http://localhost:3000/cart',
+                    url: 'http://localhost:3000/cart/' + good.id,
                     type: 'PATCH',
                     dataType: 'json',
-                    data: {quantity: +goodIncart.quantity++},
+                    data: {quantity: goodIncart.quantity + 1},
                     success: function () {
                         bilderCart();
                     }
@@ -116,9 +130,9 @@
                 dataType: 'json',
                 success: function (cart) {
                     if (cart.length < 1) {
-                        var $cardEmptyString = $('<div/>').addClass('card_empty').text('Корзина пуста');
-                        $($cartList).append($cardEmptyString);
+                        $('.card_empty').addClass('block');
                     } else {
+                        $('.card_empty').removeClass('block');
                         bilderCart();
                     }
                 }
