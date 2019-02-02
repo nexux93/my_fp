@@ -41,6 +41,15 @@
       "imgSmall": "img/card_item.jpg"
     }
   ],
-  "cart": [],
-  "response": []
+  "cart": [
+    {
+      "id": "1",
+      "name": "Бластерная винтовка DC-15A",
+      "price": "5000",
+      "category": "Clone_weapon",
+      "imgBig": "img/Layer_4.jpg",
+      "imgSmall": "img/card_item.jpg",
+      "quantity": "10"
+    }
+  ]
 }

@@ -182,7 +182,8 @@ header {
 
 .card_item__img {
   display: flex;
-  flex-grow: 1; }
+  flex-grow: 1;
+  margin-right: 15px; }
 .card_item__img img {
   width: 72px;
   height: 85px; }
@@ -194,9 +195,12 @@ header {
 .card_item__delete {
   display: flex;
   flex-grow: 1;
-  align-items: center; }
-.card_item__delete a {
-  cursor: pointer; }
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; }
+.card_item__delete i {
+  cursor: pointer;
+  margin-bottom: 5px; }
 
 .card_separator {
   width: 229px;
@@ -307,7 +311,7 @@ header {
   color: #646464; }
 
 .card_empty {
-  display: none;
+  display: block;
   line-height: 55px;
   text-align: center;
   color: #4a4a4a;

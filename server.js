@@ -48,12 +48,13 @@
                         var $cardDescRespect = $('<div/>').addClass('card_desc__respect').append($cardImgRespect);
                         var $cardDescCount = $('<span/>').addClass('card_desc__count').text(item.quantity);
                         var $cardDescSumm = $('<span/>').addClass('card_desc__summ');
-                        var $cardDeleteImg = $('<i/>').addClass('fas fa-times-circle');
-                        // button buy
-                        var $cardDeleteHref = $('<a/>').addClass('').append($cardDeleteImg).attr('id', 'cart-' + item.id);
+                        // button delete
+                        var $cardDeleteButton = $('<i/>').addClass('fas fa-times-circle').click(deleteCardButton).data(item);
+                        // button add
+                        var $cardAddButton = $('<i/>').addClass('fas fa-plus-circle').attr('id', 'cart-' + item.id).click(addCartButton).data(item);
 
                         var $cardDescPrice = $('<div/>').addClass('card_desc__price').append($cardDescCount, $cardDescSumm);
-                        var $cardDelete = $('<div/>').addClass('card_item__delete').append($cardDeleteHref).data(item);
+                        var $cardDelete = $('<div/>').addClass('card_item__delete').append($cardDeleteButton, $cardAddButton);
                         var $cardImgItem = $('<img alt="" src="">').attr('src', item.imgSmall);
                         var $cardDesc = $('<div/>').addClass('card_item__desc card_desc').append($cardDescName,
                             $cardDescRespect,
@@ -64,13 +65,15 @@
                             $cardDelete);
 
                         $($cartList).append($cardProduct, $cardSeparator);
+                        bilderCartButton();
                     })
                 }
             });
 
         }
 
-        $($cartList).on('click', '.card_item__delete', function () {
+
+        function deleteCardButton() {
 
             var good = $(this).data();
             $.ajax({
@@ -78,14 +81,32 @@
                 type: 'DELETE',
                 success: function () {
                     bilderCart();
+                    cartIsEmpty();
                 }
             })
-        });
+        }
+
+        function addCartButton() {
+            var good = $(this).data();
+            $.ajax({
+                url: 'http://localhost:3000/cart/' + good.id,
+                type: 'PATCH',
+                dataType: 'json',
+                data: {quantity: +good.quantity + 1},
+                success: function () {
+                    bilderCart();
+                }
+            })
+        }
 
         function bilderCartButton() {
-            var $cardButtonCheck = $('<a/>').addClass('card_product__checkout').text('checkout').attr('href', 'checkout.html');
-            var $cardButtonShop = $('<a/>').addClass('card_product__toCard btn_empty_grey').text('Go to cart').attr('href', '#');
-            $($cartList).append($cardButtonCheck, $cardButtonShop);
+            if ($($cartList).children(".card_product__checkout")) {
+
+            } else {
+                var $cardButtonCheck = $('<a/>').addClass('card_product__checkout').text('checkout').attr('href', 'checkout.html');
+                var $cardButtonShop = $('<a/>').addClass('card_product__toCard btn_empty_grey').text('Go to cart').attr('href', '#');
+                $($cartList).append($cardButtonCheck, $cardButtonShop);
+            }
         }
 
 
@@ -96,14 +117,13 @@
             var good = $(this).data();
 
             if ($('#cart-1').length > 0) {
-                console.log(111);
                 var goodIncart = $('#cart-' + good.id).data();
 
                 $.ajax({
                     url: 'http://localhost:3000/cart/' + good.id,
                     type: 'PATCH',
                     dataType: 'json',
-                    data: {quantity: goodIncart.quantity + 1},
+                    data: {quantity: +goodIncart.quantity + 1},
                     success: function () {
                         bilderCart();
                     }
@@ -130,9 +150,10 @@
                 dataType: 'json',
                 success: function (cart) {
                     if (cart.length < 1) {
-                        $('.card_empty').addClass('block');
+                        var $divEmpty = $('<div/>').addClass('card_empty').text('Корзина пуста');
+                        $($cartList).append($divEmpty);
+                        bilderCartButton();
                     } else {
-                        $('.card_empty').removeClass('block');
                         bilderCart();
                     }
                 }
