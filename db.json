@@ -43,13 +43,13 @@
   ],
   "cart": [
     {
-      "id": "1",
-      "name": "Бластерная винтовка DC-15A",
-      "price": "5000",
+      "id": "3",
+      "name": "Бластерная винтовка WESTAR-M5",
+      "price": "25000",
       "category": "Clone_weapon",
       "imgBig": "img/Layer_4.jpg",
       "imgSmall": "img/card_item.jpg",
-      "quantity": "10"
+      "quantity": "5"
     }
   ]
 }

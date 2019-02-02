@@ -11,7 +11,7 @@
                 success: function (goods) {
                     goods.forEach(function (item) {
                         // buy button
-                        var $catalogAddHref = $('<span/>').addClass('block_add_hover_text').data(item).attr('id', 'card-' + item.id).text('Add to cart');
+                        var $catalogAddHref = $('<span/>').addClass('block_add_hover_text').data(item).attr('id', 'card-' + item.id).text('Add to cart').click(addToCart);
 
                         var $catalogAddImg = $('<img alt="" src="img/add_img.svg">');
                         var $catalogAddItem = $('<div/>').addClass('add_item');
@@ -51,10 +51,12 @@
                         // button delete
                         var $cardDeleteButton = $('<i/>').addClass('fas fa-times-circle').click(deleteCardButton).data(item);
                         // button add
-                        var $cardAddButton = $('<i/>').addClass('fas fa-plus-circle').attr('id', 'cart-' + item.id).click(addCartButton).data(item);
+                        var $cardAddButton = $('<i/>').addClass('fas fa-plus-circle').click(addCartButton).data(item);
+                        // button minus
+                        var $cartMinusButton = $('<i/>').addClass('fas fa-minus-circle').data(item).click(minusItem);
 
                         var $cardDescPrice = $('<div/>').addClass('card_desc__price').append($cardDescCount, $cardDescSumm);
-                        var $cardDelete = $('<div/>').addClass('card_item__delete').append($cardDeleteButton, $cardAddButton);
+                        var $cardDelete = $('<div/>').addClass('card_item__delete').append($cardDeleteButton, $cardAddButton, $cartMinusButton);
                         var $cardImgItem = $('<img alt="" src="">').attr('src', item.imgSmall);
                         var $cardDesc = $('<div/>').addClass('card_item__desc card_desc').append($cardDescName,
                             $cardDescRespect,
@@ -99,8 +101,21 @@
             })
         }
 
+        function minusItem () {
+            var good = $(this).data();
+            $.ajax({
+                url: 'http://localhost:3000/cart/' + good.id,
+                type: 'PATCH',
+                dataType: 'json',
+                data: {quantity: +good.quantity - 1},
+                success: function () {
+                    bilderCart();
+                }
+            })
+        }
+
         function bilderCartButton() {
-            if ($($cartList).children(".card_product__checkout")) {
+            if (!$($cartList).children(".card_product__checkout")) {
 
             } else {
                 var $cardButtonCheck = $('<a/>').addClass('card_product__checkout').text('checkout').attr('href', 'checkout.html');
@@ -110,22 +125,27 @@
         }
 
 
+
+
         bilderCatalog();
 
-        $catalItem.on('click', '.block_add_hover_text', function () {
+
+        function addToCart() {
 
             var good = $(this).data();
 
-            if ($('#cart-1').length > 0) {
-                var goodIncart = $('#cart-' + good.id).data();
+            if ($('#cart-' + good.id).length > 0) {
 
                 $.ajax({
                     url: 'http://localhost:3000/cart/' + good.id,
                     type: 'PATCH',
                     dataType: 'json',
-                    data: {quantity: +goodIncart.quantity + 1},
+                    data: {quantity: +good.quantity + 1},
                     success: function () {
                         bilderCart();
+                    },
+                    error: function () {
+                        alert();
                     }
                 })
             } else {
@@ -140,7 +160,7 @@
                     }
                 })
             }
-        });
+        }
 
 
         function cartIsEmpty() {
