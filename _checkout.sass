@@ -53,6 +53,10 @@
     margin-top: 33px
     margin-bottom: 33px
 
+  &__form label
+    display: flex
+    align-items: center
+
   &__next
     margin-top: 38px
     width: 180px
@@ -89,3 +93,26 @@
     font-weight: 700
   &__forgot,&__forgot:hover, &__forgot:visited
     color: #222222
+
+
+.radio_butt input
+  display: none
+
+.radio_butt input+div
+  content: "\a"
+  border: #555555 solid 2px
+  border-radius: 20px
+  width: 14px
+  height: 14px
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-right: 14px
+
+.check-active
+  content: "\a"
+  background: #555555
+  border-radius: 20px
+  width: 8px
+  height: 8px
+

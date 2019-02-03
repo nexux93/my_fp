@@ -41,15 +41,5 @@
       "imgSmall": "img/card_item.jpg"
     }
   ],
-  "cart": [
-    {
-      "id": "3",
-      "name": "Бластерная винтовка WESTAR-M5",
-      "price": "25000",
-      "category": "Clone_weapon",
-      "imgBig": "img/Layer_4.jpg",
-      "imgSmall": "img/card_item.jpg",
-      "quantity": "5"
-    }
-  ]
+  "cart": []
 }

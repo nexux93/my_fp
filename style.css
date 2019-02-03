@@ -659,48 +659,6 @@ summary {
   font-size: 14px;
   font-weight: 400; }
 
-/* Скрываем реальный чекбокс */
-.checkbox {
-  display: none; }
-
-/* Задаем внешний вид для нашего кастомного чекбокса. Все обязательные свойства прокомментированы, остальные же свойства меняйте по вашему усмотрению */
-.checkbox-custom {
-  position: relative;
-  /* Обязательно задаем, чтобы мы могли абсолютным образом позиционировать псевдоэлемент внютри нашего кастомного чекбокса */
-  width: 13px;
-  /* Обязательно задаем ширину */
-  height: 13px;
-  /* Обязательно задаем высоту */
-  border: 1px solid #ebebeb; }
-
-/* Кастомный чекбокс и лейбл центрируем по вертикали. Если вам это не требуется, то вы можете убрать свойство vertical-align: middle из данного правила, но свойство display: inline-block обязательно должно быть */
-.checkbox-custom,
-.label {
-  display: inline-block;
-  vertical-align: middle; }
-
-/* Если реальный чекбокс у нас отмечен, то тогда добавляем данный признак и к нашему кастомному чекбоксу  */
-.checkbox:checked + .checkbox-custom::before {
-  content: "";
-  /* Добавляем наш псевдоэлемент */
-  display: block;
-  /* Делаем его блочным элементом */
-  position: absolute;
-  /* Позиционируем его абсолютным образом */
-  /* Задаем расстояние от верхней, правой, нижней и левой границы */
-  top: 2px;
-  right: 2px;
-  bottom: 2px;
-  left: 2px;
-  background: #F16D7F;
-  /* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
-  border-radius: 2px; }
-
-.checkbox_label {
-  margin-left: 9px;
-  margin-right: 23px; }
-
-/*checkbox style end */
 .line-he, .product_btn_clear, .product_btn_continue {
   line-height: 50px;
   text-align: center; }
@@ -1200,6 +1158,9 @@ input::-webkit-inner-spin-button {
   flex-direction: column;
   margin-top: 33px;
   margin-bottom: 33px; }
+.list_left__form label, .list_right__form label {
+  display: flex;
+  align-items: center; }
 .list_left__next, .list_right__next {
   margin-top: 38px;
   width: 180px; }
@@ -1228,6 +1189,27 @@ input::-webkit-inner-spin-button {
   font-weight: 700; }
 .right_form__forgot, .right_form__forgot:hover, .right_form__forgot:visited {
   color: #222222; }
+
+.radio_butt input {
+  display: none; }
+
+.radio_butt input + div {
+  content: "\a";
+  border: #555555 solid 2px;
+  border-radius: 20px;
+  width: 14px;
+  height: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 14px; }
+
+.check-active {
+  content: "\a";
+  background: #555555;
+  border-radius: 20px;
+  width: 8px;
+  height: 8px; }
 
 .line-he, .product_btn_clear, .product_btn_continue {
   line-height: 50px;
