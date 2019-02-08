@@ -35,6 +35,7 @@
         }
 
         function bilderCart() {
+            var summ = 0;
             $($cartList).empty();
             $.ajax({
                 url: 'http://localhost:3000/cart',
@@ -46,14 +47,17 @@
                         var $cardDescName = $('<div/>').addClass('card_desc__name').text(item.name);
                         var $cardImgRespect = $('<img alt="" src="img/stars_respect.jpg">');
                         var $cardDescRespect = $('<div/>').addClass('card_desc__respect').append($cardImgRespect);
-                        var $cardDescCount = $('<span/>').addClass('card_desc__count').text(item.quantity);
-                        var $cardDescSumm = $('<span/>').addClass('card_desc__summ');
-                        var $cardDeleteImg = $('<i/>').addClass('fas fa-times-circle');
-                        // button buy
-                        var $cardDeleteHref = $('<a/>').addClass('').append($cardDeleteImg).attr('id', 'cart-' + item.id);
+                        var $cardDescCount = $('<span/>').addClass('card_desc__count').text(item.quantity + ' ' +'x').attr('id', 'cart-' + item.id);
+                        var $cardDescSumm = $('<span/>').addClass('card_desc__summ').text(item.price);
+                        // button delete
+                        var $cardDeleteButton = $('<i/>').addClass('fas fa-times-circle').click(deleteCardButton).data(item);
+                        // button add
+                        var $cardAddButton = $('<i/>').addClass('fas fa-plus-circle').click(addCartButton).data(item);
+                        // button minus
+                        var $cartMinusButton = $('<i/>').addClass('fas fa-minus-circle').data(item).click(minusItem);
 
                         var $cardDescPrice = $('<div/>').addClass('card_desc__price').append($cardDescCount, $cardDescSumm);
-                        var $cardDelete = $('<div/>').addClass('card_item__delete').append($cardDeleteHref).data(item);
+                        var $cardDelete = $('<div/>').addClass('card_item__delete').append($cardDeleteButton, $cardAddButton, $cartMinusButton);
                         var $cardImgItem = $('<img alt="" src="">').attr('src', item.imgSmall);
                         var $cardDesc = $('<div/>').addClass('card_item__desc card_desc').append($cardDescName,
                             $cardDescRespect,
@@ -63,14 +67,21 @@
                             $cardDesc,
                             $cardDelete);
 
+                        summ += +item.price * +item.quantity;
+
                         $($cartList).append($cardProduct, $cardSeparator);
-                    })
+
+                    });
+                    bilderCartButton(summ);
+                    countCartItem();
                 }
+
             });
 
         }
 
-        $($cartList).on('click', '.card_item__delete', function () {
+
+        function deleteCardButton() {
 
             var good = $(this).data();
             $.ajax({
@@ -78,34 +89,104 @@
                 type: 'DELETE',
                 success: function () {
                     bilderCart();
+                    cartIsEmpty();
                 }
             })
-        });
+        }
 
-        function bilderCartButton() {
-            var $cardButtonCheck = $('<a/>').addClass('card_product__checkout').text('checkout').attr('href', 'checkout.html');
-            var $cardButtonShop = $('<a/>').addClass('card_product__toCard btn_empty_grey').text('Go to cart').attr('href', '#');
-            $($cartList).append($cardButtonCheck, $cardButtonShop);
+        function addCartButton() {
+            var good = $(this).data();
+            $.ajax({
+                url: 'http://localhost:3000/cart/' + good.id,
+                type: 'PATCH',
+                dataType: 'json',
+                data: {quantity: +good.quantity + 1},
+                success: function () {
+                    bilderCart();
+                }
+            })
+        }
+
+        function minusItem() {
+            var good = $(this).data();
+            $.ajax({
+                url: 'http://localhost:3000/cart/' + good.id,
+                type: 'PATCH',
+                dataType: 'json',
+                data: {quantity: +good.quantity - 1},
+                success: function () {
+                    bilderCart();
+                    if(good.quantity < 2){
+                        $.ajax({
+                            url: 'http://localhost:3000/cart/' + good.id,
+                            type: 'DELETE',
+                            success: function () {
+                                bilderCart();
+                                cartIsEmpty();
+                            }
+                        })
+                    }
+                }
+            })
+        }
+
+        function bilderCartButton(summ) {
+            if (!$($cartList).children(".card_product__checkout")) {
+
+            } else {
+                var $cardTotalPriceLeft = $('<span/>').text('TOTAL');
+                var $cardTotalPriceRight = $('<span/>').text(summ);
+                var $cardTotalPrice = $('<div/>').addClass('card_product__totalPrice').append($cardTotalPriceLeft,
+                $cardTotalPriceRight);
+                var $cardButtonCheck = $('<a/>').addClass('card_product__checkout').text('checkout').attr('href', 'checkout.html');
+                var $cardButtonShop = $('<a/>').addClass('card_product__toCard btn_empty_grey').text('Go to cart').attr('href', 'Shopping Cart.html');
+                $($cartList).append($cardTotalPrice, $cardButtonCheck, $cardButtonShop);
+            }
         }
 
 
+        function countCartItem() {
+            var $number = $('.number');
+            $.ajax({
+                url: 'http://localhost:3000/cart',
+                type: 'GET',
+                dataType: 'json',
+                success: function (good) {
+                    if (good.length === 0) {
+                        $($number).hide();
+                    } else {
+                        $($number).text(good.length );
+                    }
+
+                },
+                error: function () {
+                    alert('Ошибка рендера количества товава в корзине');
+                }
+            });
+
+        }
+
         bilderCatalog();
 
-        $catalItem.on('click', '.block_add_hover_text', function () {
+
+        function addToCart() {
 
             var good = $(this).data();
 
-            if ($('#cart-1').length > 0) {
-                console.log(111);
-                var goodIncart = $('#cart-' + good.id).data();
+            if ($('#cart-' + good.id).length) {
 
                 $.ajax({
                     url: 'http://localhost:3000/cart/' + good.id,
                     type: 'PATCH',
                     dataType: 'json',
-                    data: {quantity: goodIncart.quantity + 1},
+                    data: {quantity: +good.quantity + 1},
                     success: function () {
+                        console.log(good);
                         bilderCart();
+                        countCartItem();
+                    },
+                    error: function () {
+                        alert('Добавление не удалось');
                     }
                 })
             } else {
@@ -117,10 +198,13 @@
                     data: good,
                     success: function () {
                         bilderCart();
+                    },
+                    error: function () {
+                        alert('Неудачная попытка добавить товар');
                     }
                 })
             }
-        });
+        }
 
 
         function cartIsEmpty() {
@@ -130,9 +214,11 @@
                 dataType: 'json',
                 success: function (cart) {
                     if (cart.length < 1) {
-                        $('.card_empty').addClass('block');
+                        var $divEmpty = $('<div/>').addClass('card_empty').text('Корзина пуста');
+                        $($cartList).append($divEmpty);
+                        bilderCartButton();
+                        countCartItem();
                     } else {
-                        $('.card_empty').removeClass('block');
                         bilderCart();
                     }
                 }

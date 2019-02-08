@@ -6,7 +6,10 @@
       "price": "5000",
       "category": "Clone_weapon",
       "imgBig": "img/Layer_4.jpg",
-      "imgSmall": "img/card_item.jpg"
+      "imgSmall": "img/card_item.jpg",
+      "color": "red",
+      "size": "XXL",
+      "shipping": "FREE"
     },
     {
       "id": 2,
@@ -14,7 +17,10 @@
       "price": "35000",
       "category": "Clone_weapon",
       "imgBig": "img/Layer_4.jpg",
-      "imgSmall": "img/card_item.jpg"
+      "imgSmall": "img/card_item.jpg",
+      "color": "red",
+      "size": "XXL",
+      "shipping":  "FREE"
     },
     {
       "id": 3,
@@ -22,7 +28,10 @@
       "price": "25000",
       "category": "Clone_weapon",
       "imgBig": "img/Layer_4.jpg",
-      "imgSmall": "img/card_item.jpg"
+      "imgSmall": "img/card_item.jpg",
+      "color": "red",
+      "size": "XXL",
+      "shipping":  "FREE"
     },
     {
       "id": 4,
@@ -30,7 +39,10 @@
       "price": "85000",
       "category": "Clone_weapon",
       "imgBig": "img/Layer_4.jpg",
-      "imgSmall": "img/card_item.jpg"
+      "imgSmall": "img/card_item.jpg",
+      "color": "red",
+      "size": "XXL",
+      "shipping":  "FREE"
     },
     {
       "id": 5,
@@ -38,7 +50,10 @@
       "price": "85000",
       "category": "Clone_weapon",
       "imgBig": "img/Layer_4.jpg",
-      "imgSmall": "img/card_item.jpg"
+      "imgSmall": "img/card_item.jpg",
+      "color": "red",
+      "size": "XXL",
+      "shipping":  "FREE"
     }
   ],
   "cart": [
