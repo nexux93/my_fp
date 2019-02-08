@@ -24,7 +24,7 @@
                         name.removeClass('sucsess')
                     }
                     name.textContent = 'не верно';
-                    name.addClass('denied');
+                    name.addClass('denied').effect( "shake" );
                     errorLog.push('Имя не верно');
                 }
 
@@ -40,7 +40,7 @@
                         tel.removeClass('sucsess')
                     }
                     tel.textContent = 'не верно';
-                    tel.addClass('denied');
+                    tel.addClass('denied').effect( "shake" );
                     errorLog.push('Телефон не верен')
                 }
 
@@ -54,7 +54,7 @@
                     if (email.attr('class') == 'sucsess') {
                         email.removeClass('sucsess')
                     }
-                    email.addClass('denied');
+                    email.addClass('denied').effect( "shake" );
                     errorLog.push('Email не верен')
                 }
                 errorDialog(errorLog);
