@@ -11,11 +11,15 @@
 
     <style>
 
-        #gallery img {
-            width: 20%;
-            height: 20%;
-        }
+       #body {
+           display: flex;
+           flex-direction: column;
+           width: 20%;
+       }
 
+       label {
+           margin-bottom: 20px;
+       }
         .content {
             display: none;
         }
@@ -35,23 +39,24 @@
 </head>
 <body id="body">
 
-<label for="names">
+<label for="names">Имя
     <input id="names" type="text" min="1">
 </label>
-<label for="tel">
+<label for="tel">Телефон
     <input id="tel" type="text">
 </label>
-<label for="email">
+<label for="email">Email
     <input id="email" type="text">
 </label>
-<label for="text">
+<label for="text">Текст
     <input id="text" type="text">
 </label>
-<label for="birthday">
+<label for="birthday">Дата рождения
     <input id="birthday" type="text">
 </label>
 <input id="submit" type="button" value="Отправить">
 
+<div id="dialog" title="Dialog Title"></div>
 <script src="js_lvlUp/js_6.js"></script>
 <script src="js_lvlUp/js_6_6.js"></script>
 </body>
