@@ -107,4 +107,9 @@
             }
         }
     );
+
+    $('.owl-carousel').owlCarousel({
+        dots: false,
+        loop: true
+    });
 })(jQuery);
