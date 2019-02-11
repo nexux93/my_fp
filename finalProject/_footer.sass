@@ -1,0 +1,101 @@
+@import "var"
+footer
+  display: flex
+  align-items: center
+  flex-direction: column
+
+.container-footer
+  width: 1140px
+  @extend .flex-sp-between
+  margin-top: 109px
+  margin-bottom: 89px
+
+.footer_block_desc
+  width: 427px
+  height: 180px
+  color: #898989
+  font-family: Lato
+  font-size: 14px
+  font-weight: 300
+  line-height: 24px
+  letter-spacing: 0.35px
+
+.brand_footer_block
+  margin-bottom: 29px
+
+.footer_desc_span
+  padding-bottom: 20px
+  display: block
+
+.footer_menu_title
+  height: 14px
+  color: #f16d7f
+  font-family: Lato
+  font-size: 18px
+  font-weight: 700
+  line-height: 26px
+  text-transform: uppercase
+  margin-bottom: 29px
+  letter-spacing: 0.45px
+
+.footer_first_list
+  margin-right: 75px
+
+.footer_list
+  padding-inline-start: 0
+
+.footer_list li
+  color: #898989
+  font-family: Lato
+  font-size: 16px
+  font-weight: 400
+  letter-spacing: 0.4px
+  line-height: 42px
+
+.footer_footer
+  height: 79px
+  background-color: #e6e6e6
+  width: 100%
+  @extend .flex-center
+
+.footer_footer_text
+  color: #7a7a7a
+  font-family: Lato
+  font-size: 16px
+  font-weight: 400
+  line-height: 42px
+  letter-spacing: 0.4px
+
+.container-ff
+  width: 1140px
+  @extend .flex-sp-between
+  align-items: center
+
+.share_block
+  display: flex
+  margin-left: 8px
+
+.facebook_share, .twitter_share, .linken_share, .pinterest_share, .google_share
+  width: 32px
+  height: 32px
+  background-color: #ffffff
+  margin-right: 8px
+  display: block
+  line-height: 32px
+  text-align: center
+  transition: all 0.5s
+
+.facebook_share:hover, .twitter_share:hover, .pinterest_share:hover, .google_share:hover
+  background: $main_color
+
+.facebook_share:hover .fa-facebook-f, .twitter_share:hover .fa-twitter, .pinterest_share:hover .fa-pinterest-p, .google_share:hover .fa-google-plus-g
+  color: #f7f7f8
+
+.google_share
+  margin-right: 0
+
+.fa-facebook-f, .fa-twitter, .fa-google-plus-g, .fa-pinterest-p, .fa-google-plus-g, .fa-linkedin-in
+  color: #b2b2b2
+
+.linken_share
+  background-color: #eeeeee

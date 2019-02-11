@@ -1,0 +1,33 @@
+$main_width: 1140px
+$main_color: #f16d7f
+$description_block_width: 575px
+$black-text: #222222
+.line-he
+  line-height: 50px
+  text-align: center
+
+.delivery_width
+  width: $main_width / 3 - 36px * 2
+
+
+.flex
+  display: flex
+
+.flex-center
+  display: flex
+  justify-content: center
+
+.marg-top
+  margin-top: 33px
+
+.flex-sp-between
+  display: flex
+  justify-content: space-between
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none
+  margin: 0
+/* <-- Apparently some margin are still there even though it's hidden */
+

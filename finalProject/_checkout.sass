@@ -1,0 +1,91 @@
+@import "var"
+
+.checkout
+  display: flex
+  justify-content: center
+
+  &__container
+    width: $main_width
+
+.check_list
+  &__separator
+    width: 100%
+    margin-top: 31px
+    margin-bottom: 33px
+    border-bottom: 1px solid #dfdfdf
+
+.check_list:last-of-type
+  margin-bottom: 70px
+
+.list_container
+  display: flex
+
+
+  &__left
+    display: flex
+    flex-direction: column
+    flex-grow: 1
+
+  &__right
+    display: flex
+    flex-direction: column
+    flex-grow: 1
+
+.list_left, .list_right
+  &__bold
+    color: #222222
+    font-family: Lato
+    font-size: 13px
+    font-weight: 700
+    text-transform: uppercase
+    margin-bottom: 15px
+
+  &__light
+    color: #b3b2b2
+    font-family: Lato
+    font-size: 13px
+    font-weight: 400
+    line-height: 20px
+
+  &__form
+    display: flex
+    flex-direction: column
+    margin-top: 33px
+    margin-bottom: 33px
+
+  &__next
+    margin-top: 38px
+    width: 180px
+
+  &__login
+    width: 180px
+
+
+.form_login
+  &__btn
+    margin-right: 38px
+
+
+.right_form
+  input
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    margin-bottom: 20px
+    padding: 16px
+    box-sizing: border-box
+
+  &__login
+    display: flex
+    align-items: center
+
+  &__email, &__password
+    margin-bottom: 16px
+
+  &__required
+    margin-bottom: 32px
+    margin-top: 22px
+    font-family: Lato
+    font-size: 13px
+    font-weight: 700
+  &__forgot,&__forgot:hover, &__forgot:visited
+    color: #222222
