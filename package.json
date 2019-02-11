@@ -1,0 +1,26 @@
+{
+  "name": "final",
+  "version": "0.8.0",
+  "description": "",
+  "main": "cart_empty.js",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nexux93/my_fp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nexux93/my_fp/issues"
+  },
+  "homepage": "https://github.com/nexux93/my_fp#readme"
+}
