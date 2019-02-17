@@ -6,7 +6,10 @@
       "price": "5000",
       "category": "Clone_weapon",
       "imgBig": "img/Layer_4.jpg",
-      "imgSmall": "img/card_item.jpg"
+      "imgSmall": "img/card_item.jpg",
+      "size": "Mid",
+      "delivery": "free",
+      "spCartImg": "img/product_item.jpg"
     },
     {
       "id": 2,
@@ -14,7 +17,10 @@
       "price": "35000",
       "category": "Clone_weapon",
       "imgBig": "img/Layer_4.jpg",
-      "imgSmall": "img/card_item.jpg"
+      "imgSmall": "img/card_item.jpg",
+      "size": "Mid",
+      "delivery": "free",
+      "spCartImg":  "img/product_item.jpg"
     },
     {
       "id": 3,
@@ -22,7 +28,10 @@
       "price": "25000",
       "category": "Clone_weapon",
       "imgBig": "img/Layer_4.jpg",
-      "imgSmall": "img/card_item.jpg"
+      "imgSmall": "img/card_item.jpg",
+      "size": "Big",
+      "delivery": "free",
+      "spCartImg":  "img/product_item.jpg"
     },
     {
       "id": 4,
@@ -30,7 +39,10 @@
       "price": "85000",
       "category": "Clone_weapon",
       "imgBig": "img/Layer_4.jpg",
-      "imgSmall": "img/card_item.jpg"
+      "imgSmall": "img/card_item.jpg",
+      "size": "Big",
+      "delivery": "free",
+      "spCartImg":  "img/product_item.jpg"
     },
     {
       "id": 5,
@@ -38,8 +50,24 @@
       "price": "85000",
       "category": "Clone_weapon",
       "imgBig": "img/Layer_4.jpg",
-      "imgSmall": "img/card_item.jpg"
+      "imgSmall": "img/card_item.jpg",
+      "size": "Big",
+      "delivery": "free",
+      "spCartImg":  "img/product_item.jpg"
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": "2",
+      "name": "Ручной бластер DC-17",
+      "price": "35000",
+      "category": "Clone_weapon",
+      "imgBig": "img/Layer_4.jpg",
+      "imgSmall": "img/card_item.jpg",
+      "size": "Mid",
+      "delivery": "free",
+      "quantity": "2",
+      "spCartImg":  "img/product_item.jpg"
+    }
+  ]
 }

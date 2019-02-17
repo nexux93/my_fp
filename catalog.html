@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Catalog</title>
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
     <link rel="stylesheet" href="normalize.css"/>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
           rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
 
 
 </head>
@@ -31,7 +34,7 @@
             </form>
         </div>
         <div class="header-right">
-            <a href="Shopping Cart.html" class="card_img"><img src="img/Forma_1.svg" alt=""></a>
+            <a href="Shopping_Cart.html" class="card_img"><img src="img/Forma_1.svg" alt=""></a>
             <a href="#" class="btn-pink"> <span class="white">My&nbsp;Account</span>
                 <div class="caret"><img src="img/caret.png" alt=""></div>
             </a>
@@ -183,7 +186,7 @@
 <section class="catalog-section">
     <div class="catalog-container">
         <div class="catalog-left-nav">
-            <details>
+            <details open>
                 <summary>CATEGORY</summary>
                 <ul class="category_list">
                     <li class="category_list_item"><a href="">Accessories</a></li>
@@ -225,8 +228,8 @@ Lace
                     </div>
                     <div>
 <span class="filter_var_item">
-Lace
-</span>
+    Lace
+        </span>
                         <span class="filter_var_item">
 Floral
 </span>
@@ -292,12 +295,11 @@ Bohemian
                 </div>
                 <div class="filter-title">
                     PRICE
-                    <div class="filter-var">
-                        <input type="range" min="0" max="100" step="1" value="50">
+                    <div class="filter-var" id="filter-var">
                     </div>
                     <div class="catalog_range_price">
-                        <span>$52</span>
-                        <span>$400</span>
+                        <span id="minRange">$52</span>
+                        <span id="maxRange">$400</span>
                     </div>
                 </div>
             </div>
@@ -321,44 +323,8 @@ Bohemian
                     </select>
                 </div>
             </div>
-            <div class="row-catalog-item">
-                <div class="item_block">
-                    <div>
-                        <img src="img/Layer_4.jpg" class="item_img" alt="">
-                    </div>
-                    <span class="item_text">Mango People T-shirt</span>
-                    <span class="item_text item_span">$52.00</span>
-                </div>
-                <div class="item_block">
-                    <div>
-                        <img src="img/Layer_4.jpg" class="item_img" alt="">
-                    </div>
-                    <span class="item_text">Mango People T-shirt</span>
-                    <span class="item_text item_span">$52.00</span>
-                </div>
-                <div class="item_block">
-                    <div>
-                        <img src="img/Layer_4.jpg" class="item_img" alt="">
-                    </div>
-                    <span class="item_text">Mango People T-shirt</span>
-                    <span class="item_text item_span">$52.00</span>
-                </div>
-            </div>
-            <div class="row-catalog-item">
-                <div class="item_block">
-                    <div>
-                        <img src="img/Layer_4.jpg" class="item_img" alt="">
-                    </div>
-                    <span class="item_text">Mango People T-shirt</span>
-                    <span class="item_text item_span">$52.00</span>
-                </div>
-                <div class="item_block">
-                    <div>
-                        <img src="img/Layer_4.jpg" class="item_img" alt="">
-                    </div>
-                    <span class="item_text">Mango People T-shirt</span>
-                    <span class="item_text item_span">$52.00</span>
-                </div>
+            <div class="row-catalog-item" id="catalogLog">
+
             </div>
             <div class="row-pagination">
                 <div class="pagination_item">
@@ -545,5 +511,6 @@ a&nbsp;pulvinar purus condimentum&nbsp;a. Aliquam condimentum mattis neque sed p
         </div>
     </div>
 </footer>
+<script src="catalog.js"></script>
 </body>
 </html>
