@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Single Page</title>
+    <link rel="stylesheet" href="node_modules/owl.carousel2/dist/assets/owl.carousel.css">
     <link rel="stylesheet" href="normalize.css"/>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
           rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
 
 
 </head>
@@ -173,13 +175,19 @@
     </div>
 </div>
 <div class="single-container ">
-    <div class="single-container__block single-block">
-        <div class="single-block__controls">
-
-        </div>
-        <div class="single-block__img">
-            <img src="img/single.jpg" alt="">
-        </div>
+    <div class="single-container__block single-block ">
+        <div class="owl-nav" id="nav-carousel"></div>
+            <div class="owl-carousel owl-theme">
+                <div>
+                    <img src="img/single.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/single.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/single.jpg" alt="">
+                </div>
+            </div>
     </div>
 </div>
 <div class="flex-center pos-relative">
@@ -412,4 +420,6 @@ a&nbsp;pulvinar purus condimentum&nbsp;a. Aliquam condimentum mattis neque sed p
     </div>
 </footer>
 </body>
+<script src="node_modules/owl.carousel2/dist/owl.carousel.js"></script>
+<script src="single.js"></script>
 </html>
