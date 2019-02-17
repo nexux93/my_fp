@@ -9,7 +9,8 @@
       "imgSmall": "img/card_item.jpg",
       "size": "Mid",
       "delivery": "free",
-      "spCartImg": "img/product_item.jpg"
+      "spCartImg": "img/product_item.jpg",
+      "color": "Blood"
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "imgSmall": "img/card_item.jpg",
       "size": "Mid",
       "delivery": "free",
-      "spCartImg":  "img/product_item.jpg"
+      "spCartImg": "img/product_item.jpg",
+      "color": "Blood"
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
       "imgSmall": "img/card_item.jpg",
       "size": "Big",
       "delivery": "free",
-      "spCartImg":  "img/product_item.jpg"
+      "spCartImg": "img/product_item.jpg",
+      "color": "Blood"
     },
     {
       "id": 4,
@@ -42,7 +45,8 @@
       "imgSmall": "img/card_item.jpg",
       "size": "Big",
       "delivery": "free",
-      "spCartImg":  "img/product_item.jpg"
+      "spCartImg": "img/product_item.jpg",
+      "color": "Blood"
     },
     {
       "id": 5,
@@ -53,21 +57,9 @@
       "imgSmall": "img/card_item.jpg",
       "size": "Big",
       "delivery": "free",
-      "spCartImg":  "img/product_item.jpg"
+      "spCartImg": "img/product_item.jpg",
+      "color": "Blood"
     }
   ],
-  "cart": [
-    {
-      "id": "2",
-      "name": "Ручной бластер DC-17",
-      "price": "35000",
-      "category": "Clone_weapon",
-      "imgBig": "img/Layer_4.jpg",
-      "imgSmall": "img/card_item.jpg",
-      "size": "Mid",
-      "delivery": "free",
-      "quantity": "2",
-      "spCartImg":  "img/product_item.jpg"
-    }
-  ]
+  "cart": []
 }

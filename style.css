@@ -139,11 +139,6 @@ header {
   text-transform: uppercase;
   transition: 0.5s; }
 
-.btn_empty_grey:hover {
-  color: #eaeaea;
-  border: 1px solid #4a4a4a;
-  background-color: #4a4a4a; }
-
 .card_product::before {
   content: "";
   width: 12px;
@@ -761,7 +756,8 @@ input::-webkit-inner-spin-button {
 
 .description_block_item {
   width: 115px;
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
 
 .product_btn_clear {
   width: 235px;
@@ -812,7 +808,8 @@ input::-webkit-inner-spin-button {
   font-size: 13px;
   font-weight: 400;
   line-height: 20px;
-  font-family: Lato; }
+  font-family: Lato;
+  display: flex; }
 
 .product_name {
   color: #222222;
@@ -945,6 +942,15 @@ input::-webkit-inner-spin-button {
 
 .fa-times-circle {
   color: #000000; }
+
+.action_button_groupe {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  justify-content: center; }
+  .action_button_groupe i {
+    margin-bottom: 7px;
+    cursor: pointer; }
 
 .single-container {
   border: 1px solid #eaeaea;
@@ -1750,5 +1756,13 @@ details[open] > summary::after {
 
 .block_add_hover_text img {
   padding-left: 6px; }
+
+.empty_hover_button:hover {
+  color: #eaeaea;
+  border: 1px solid #4a4a4a;
+  background-color: #4a4a4a; }
+
+.product_btn_clear, .product_btn_continue, .adress_btn, .coupon_btn, .product_btn_continue {
+  transition: 0.5s; }
 
 /*# sourceMappingURL=style.css.map */

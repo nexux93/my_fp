@@ -139,7 +139,7 @@
                 var $cardTotalPrice = $('<div/>').addClass('card_product__totalPrice').append($cardTotalPriceLeft,
                 $cardTotalPriceRight);
                 var $cardButtonCheck = $('<a/>').addClass('card_product__checkout').text('checkout').attr('href', 'checkout.html');
-                var $cardButtonShop = $('<a/>').addClass('card_product__toCard btn_empty_grey').text('Go to cart').attr('href', 'Shopping_Cart.html');
+                var $cardButtonShop = $('<a/>').addClass('card_product__toCard btn_empty_grey empty_hover_button').text('Go to cart').attr('href', 'Shopping_Cart.html');
                 $($cartList).append($cardTotalPrice, $cardButtonCheck, $cardButtonShop);
             }
         }
@@ -155,7 +155,7 @@
                     if (good.length === 0) {
                         $($number).hide();
                     } else {
-                        $($number).text(good.length );
+                        $($number).text(good.length);
                     }
 
                 },
@@ -182,8 +182,9 @@
                     data: {quantity: +good.quantity + 1},
                     success: function () {
                         console.log(good);
-                        bilderCart();
                         countCartItem();
+                        bilderCart();
+
                     },
                     error: function () {
                         alert('Добавление не удалось');
@@ -224,7 +225,7 @@
                 }
             });
         }
-
+        countCartItem();
         cartIsEmpty();
 
     });
