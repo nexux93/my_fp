@@ -120,9 +120,6 @@ header {
     text-transform: uppercase;
     margin-top: 32px;
     transition: 0.5s; }
-  .card_product__checkout:hover {
-    color: #ffffff;
-    background-color: #ef5b70; }
   .card_product__toCard {
     margin-top: 11px; }
 
@@ -925,7 +922,9 @@ input::-webkit-inner-spin-button {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 50px;
-  text-align: center; }
+  text-align: center;
+  transition: 0.5s;
+  cursor: pointer; }
 
 .delivery_title {
   margin-bottom: 22px; }
@@ -1671,12 +1670,12 @@ summary::-webkit-details-marker {
   display: none; }
 
 summary::after {
-  content: "⏷";
+  content: "тП╖";
   padding-left: 100px;
   color: #636363; }
 
 details[open] > summary::after {
-  content: "⏶";
+  content: "тП╢";
   color: #ef5b70; }
 
 .subscrible_input {
@@ -1762,7 +1761,11 @@ details[open] > summary::after {
   border: 1px solid #4a4a4a;
   background-color: #4a4a4a; }
 
-.product_btn_clear, .product_btn_continue, .adress_btn, .coupon_btn, .product_btn_continue {
+.product_btn_clear, .product_btn_continue, .adress_btn, .coupon_btn, .product_btn_continue, .empty_add_cart {
   transition: 0.5s; }
+
+.pink_button_hover:hover {
+  color: #ffffff;
+  background-color: #ef5b70; }
 
 /*# sourceMappingURL=style.css.map */

@@ -138,7 +138,7 @@
                 var $cardTotalPriceRight = $('<span/>').text(summ);
                 var $cardTotalPrice = $('<div/>').addClass('card_product__totalPrice').append($cardTotalPriceLeft,
                 $cardTotalPriceRight);
-                var $cardButtonCheck = $('<a/>').addClass('card_product__checkout').text('checkout').attr('href', 'checkout.html');
+                var $cardButtonCheck = $('<a/>').addClass('card_product__checkout pink_button_hover').text('checkout').attr('href', 'checkout.html');
                 var $cardButtonShop = $('<a/>').addClass('card_product__toCard btn_empty_grey empty_hover_button').text('Go to cart').attr('href', 'Shopping_Cart.html');
                 $($cartList).append($cardTotalPrice, $cardButtonCheck, $cardButtonShop);
             }
