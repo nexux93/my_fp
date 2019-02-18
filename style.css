@@ -1119,6 +1119,12 @@ input::-webkit-inner-spin-button {
   align-items: center;
   height: 779px; }
 
+.singleAddButton {
+  display: flex;
+  align-items: center; }
+  .singleAddButton img {
+    margin-right: 10px; }
+
 .line-he, .product_btn_clear, .product_btn_continue {
   line-height: 50px;
   text-align: center; }

@@ -178,7 +178,7 @@
     <div class="owl-nav" id="nav-carousel"></div>
     <div class="single-container__block single-block ">
 
-            <div class="owl-carousel owl-theme">
+            <div class="owl-carousel owl-theme" id="carousel">
                 <div>
                     <img src="img/single.jpg" alt="">
                 </div>
@@ -195,43 +195,37 @@
     <div class="desc_single">
         <div class="single_top">
             <div class="single_title">
-                <span class="main_title">WOMEN COLLECTION</span>
+                <span class="main_title"></span>
                 <div class="single-separator__2"></div>
 
-                <span class="second_title">Moschino Cheap And Chic</span>
+                <span class="second_title" id="productName"></span>
             </div>
             <div class="public_desc">Compellingly actualize fully researched processes before proactive outsourcing.
                 Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize
                 parallel core competencies rather than exceptional portals.
             </div>
             <div class="material">
-                <div class="material_name">MATERIAL: <span class="material_val">COTTON</span></div>
-                <div class="material_name">DESIGNER: <span class="material_val">BINBURHAN</span></div>
+                <div class="material_name">MATERIAL: <span class="material_val" id="material"></span></div>
+                <div class="material_name">DESIGNER: <span class="material_val" id="manufacturer"></span></div>
             </div>
-            <span class="price">$561</span>
+            <span class="price">$0</span>
         </div>
         <div class="single_bottom">
             <form action="#" class="add_form">
                 <label for="color" class="label_title">CHOOSE COLOR
                     <select type="text" id="color">
-                        <option value="red">red</option>
-                        <option value="green">green</option>
-                        <option value="yellow">yellow</option>
                     </select>
                 </label>
                 <label for="size" class="label_title">CHOOSE SIZE
                     <select type="text" id="size">
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
-                        <option value="">XXL</option>
 
                     </select>
                 </label>
                 <label for="QUANTITY" class="label_title">QUANTITY
-                    <input type="text" id="QUANTITY">
+                    <input type="number" min="1" id="QUANTITY">
                 </label>
             </form>
-            <a href="#" type="" class="empty_add_cart empty_hover_button"><img src="img/cart_pink.svg" alt="">Add to&nbsp;Cart</a>
+            <button type="button" class="empty_add_cart singleAddButton empty_hover_button"><img src="img/cart_pink.svg" alt="">Add to&nbsp;Cart</button>
 
         </div>
 
@@ -422,5 +416,6 @@ a&nbsp;pulvinar purus condimentum&nbsp;a. Aliquam condimentum mattis neque sed p
 </footer>
 </body>
 <script src="node_modules/owl.carousel2/dist/owl.carousel.js"></script>
-<script src="single.js"></script>
+<script src="carousel_option.js"></script>
+<script src="single_script.js"></script>
 </html>

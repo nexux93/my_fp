@@ -10,7 +10,11 @@
       "size": "Mid",
       "delivery": "free",
       "spCartImg": "img/product_item.jpg",
-      "color": "Blood"
+      "color": "Blood",
+      "material": "Steal",
+      "manufacturer": "Kamino",
+      "series": "last",
+      "collection": "Clone Weapon"
     },
     {
       "id": 2,
@@ -22,7 +26,11 @@
       "size": "Mid",
       "delivery": "free",
       "spCartImg": "img/product_item.jpg",
-      "color": "Blood"
+      "color": "Blood",
+      "material": "Steal",
+      "manufacturer": "Kamino",
+      "series": "last",
+      "collection": "Clone Weapon"
     },
     {
       "id": 3,
@@ -34,7 +42,11 @@
       "size": "Big",
       "delivery": "free",
       "spCartImg": "img/product_item.jpg",
-      "color": "Blood"
+      "color": "Blood",
+      "material": "Steal",
+      "manufacturer": "Kamino",
+      "series": "last",
+      "collection": "Clone Weapon"
     },
     {
       "id": 4,
@@ -46,7 +58,11 @@
       "size": "Big",
       "delivery": "free",
       "spCartImg": "img/product_item.jpg",
-      "color": "Blood"
+      "color": "Blood",
+      "material": "Steal",
+      "manufacturer": "Kamino",
+      "series": "last",
+      "collection": "Clone Weapon"
     },
     {
       "id": 5,
@@ -58,8 +74,30 @@
       "size": "Big",
       "delivery": "free",
       "spCartImg": "img/product_item.jpg",
-      "color": "Blood"
+      "color": "Blood",
+      "material": "Steal",
+      "manufacturer": "Kamino",
+      "series": "last",
+      "collection": "Clone Weapon"
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": "1",
+      "name": "Бластерная винтовка DC-15A",
+      "price": "5000",
+      "category": "Clone_weapon",
+      "imgBig": "img/Layer_4.jpg",
+      "imgSmall": "img/card_item.jpg",
+      "size": "Mid",
+      "delivery": "free",
+      "spCartImg": "img/product_item.jpg",
+      "color": "Blood",
+      "material": "Steal",
+      "manufacturer": "Kamino",
+      "series": "last",
+      "collection": "Clone Weapon",
+      "quantity": "1"
+    }
+  ]
 }
