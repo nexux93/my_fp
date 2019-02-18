@@ -9,9 +9,9 @@ $(function() {
         navContainer: '#nav-carousel',
         navText: [
             // предыдущаяя
-            "<div style='width: 50px;height: 50px; background-color: #5d5b5b;'><img src='img/ArrowPrew.svg' alt=''></div>",
+            "<div style='width: 50px;height: 50px; background-color: #d8d8d8;'><img src='img/ArrowPrew.svg' alt=''></div>",
             // следующаяя
-            "<div style='width: 50px;height: 50px; background-color: #5d5b5b;'><img src='img/ArrowNext.svg' alt=''></div>",
+            "<div style='width: 50px;height: 50px; background-color: #d8d8d8;'><img src='img/ArrowNext.svg' alt=''></div>",
         ]
     });
 });

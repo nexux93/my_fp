@@ -35,6 +35,7 @@
             }
         })
     }
+
     $($singleAddButton).click(addToCart);
 
     function addToCart() {
@@ -57,19 +58,21 @@
                 }
             })
         } else {
-            good.quantity = 1;
-            $.ajax({
-                url: 'http://localhost:3000/cart',
-                type: 'POST',
-                dataType: 'json',
-                data: good,
-                success: function () {
-                    console.log();
-                },
-                error: function () {
-                    alert('Неудачная попытка добавить товар');
-                }
-            })
+            good.quantity = $quantityChoise.val();
+            if ($quantityChoise.val() > '') {
+                $.ajax({
+                    url: 'http://localhost:3000/cart',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: good,
+                    success: function () {
+                        console.log();
+                    },
+                    error: function () {
+                        alert('Неудачная попытка добавить товар');
+                    }
+                })
+            }
         }
     }
 
