@@ -1670,12 +1670,12 @@ summary::-webkit-details-marker {
   display: none; }
 
 summary::after {
-  content: "тП╖";
+  content: "⏷";
   padding-left: 100px;
   color: #636363; }
 
 details[open] > summary::after {
-  content: "тП╢";
+  content: "⏶";
   color: #ef5b70; }
 
 .subscrible_input {
