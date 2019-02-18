@@ -59,7 +59,7 @@
             })
         } else {
             good.quantity = $quantityChoise.val();
-            if ($quantityChoise.val() > '') {
+            if ($quantityChoise.val() != '') {
                 $.ajax({
                     url: 'http://localhost:3000/cart',
                     type: 'POST',
