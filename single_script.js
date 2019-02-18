@@ -13,10 +13,18 @@
 
     function getGoodsOption() {
         $.ajax({
-            url: 'http://localhost:3000/goods/' + 1,
+            url: 'http://localhost:3000/goods/' + 5,
             type: 'GET',
             dataType: 'json',
             success: function (goods) {
+                var imgGoods = goods.gallery;
+                imgGoods.forEach(function (item) {
+                    $($carousel).append($('<div/>').append($('<img>', {
+                        src: item,
+                        alt: ''
+                    })));
+                });
+
                 $($nameItem).text(goods.name);
                 $($materialVal).text(goods.material);
                 $($desingerVal).text(goods.manufacturer);
@@ -75,6 +83,8 @@
             }
         }
     }
+
+
 
     getGoodsOption();
 })(jQuery);

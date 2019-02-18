@@ -14,7 +14,8 @@
       "material": "Steal",
       "manufacturer": "Kamino",
       "series": "last",
-      "collection": "Clone Weapon"
+      "collection": "Clone Weapon",
+      "gallery": "img/weapon/DC-15a_Blaster_Rifle.jpg"
     },
     {
       "id": 2,
@@ -30,7 +31,10 @@
       "material": "Steal",
       "manufacturer": "Kamino",
       "series": "last",
-      "collection": "Clone Weapon"
+      "collection": "Clone Weapon",
+      "gallery": [
+        "img/weapon/DC17HandBlaster-SWI120.jpg"
+      ]
     },
     {
       "id": 3,
@@ -46,7 +50,8 @@
       "material": "Steal",
       "manufacturer": "Kamino",
       "series": "last",
-      "collection": "Clone Weapon"
+      "collection": "Clone Weapon",
+      "gallery": "img/weapon/ARC_blaster.png"
     },
     {
       "id": 4,
@@ -62,23 +67,30 @@
       "material": "Steal",
       "manufacturer": "Kamino",
       "series": "last",
-      "collection": "Clone Weapon"
+      "collection": "Clone Weapon",
+      "gallery": "img/weapon/S4biXY7-Ks4.jpg"
     },
     {
       "id": 5,
-      "name": "Вращающаяся бластерная пушка Z-6",
-      "price": "85000",
+      "name": "Модульная оружейная система DC-17m",
+      "price": "110000",
       "category": "Clone_weapon",
       "imgBig": "img/Layer_4.jpg",
       "imgSmall": "img/card_item.jpg",
-      "size": "Big",
+      "size": "Mid",
       "delivery": "free",
       "spCartImg": "img/product_item.jpg",
       "color": "Blood",
       "material": "Steal",
       "manufacturer": "Kamino",
       "series": "last",
-      "collection": "Clone Weapon"
+      "collection": "Clone Weapon",
+      "gallery": [
+        "img/weapon/DC-17m.jpg",
+        "img/weapon/DC-17m_gran.jpg",
+        "img/weapon/DC-17m_snip.jpg",
+        "img/weapon/DC-17m_vint.jpg"
+      ]
     }
   ],
   "cart": [
