@@ -1203,7 +1203,7 @@ input::-webkit-inner-spin-button {
 .list_left__form label, .list_right__form label {
   display: flex;
   align-items: center; }
-.list_left__next, .list_right__next {
+.list_left__next, .list_left__back, .list_right__next, .list_right__back {
   margin-top: 38px;
   width: 180px; }
 .list_left__login, .list_right__login {
@@ -1252,6 +1252,9 @@ input::-webkit-inner-spin-button {
   border-radius: 20px;
   width: 8px;
   height: 8px; }
+
+.check {
+  display: none; }
 
 .line-he, .product_btn_clear, .product_btn_continue {
   line-height: 50px;

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>CheckOut</title>
+    <link rel="stylesheet" href="node_modules/jquery-ui-dist/jquery-ui.css">
     <link rel="stylesheet" href="normalize.css"/>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
           integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/jquery-ui-dist/jquery-ui.js"></script>
 
 </head>
 <body>
@@ -173,7 +175,7 @@
     </div>
 </div>
 <div class="checkout">
-    <div class="checkout__container check">
+    <div class="checkout__container ">
         <div class="check_list">
             <h2>01. SHIPPING ADRESS</h2>
             <div class="check_list__container list_container" id="check-one">
@@ -213,32 +215,65 @@ Register with us for future convenience
                     <span class="list_left__light">
 <i class="fas fa-angle-double-right"></i> Easy access to your order history and status
                 </span>
-                    <button class="btn_empty_grey empty_hover_button list_left__next">
+                    <button class="btn_empty_grey empty_hover_button list_left__next" id="12">
                         Continue
                     </button>
-                </div>
-                <div class="list_container__right list_right">
-                    <span class="list_right__bold">Already registed?</span>
-                    <span class="list_right__light">Please log in below</span>
-                    <form action="" class="list_right__form right_form">
-                        <label for="email" class="right_form__email">EMAIL ADDRESS <span class="red">*</span></label>
-                        <input type="text" id="email" class="right_form_email">
-                        <label for="password" class="right_form__password">PASSWORD <span class="red">*</span></label>
-                        <input type="text" id="password">
-                        <span class="red right_form__required">* Required Fileds</span>
-                        <div class="right_form__login form_login">
-                            <a href="#" class="btn_empty_grey empty_hover_button list_right__login form_login__btn" type="">Log in</a>
-                            <span class="list_left__bold"><a href="#"
-                                                             class="right_form__forgot">Forgot Password ?</a></span>
-                        </div>
-                    </form>
 
                 </div>
+                <!--<div class="list_container__right list_right">-->
+                    <!--<span class="list_right__bold">Already registed?</span>-->
+                    <!--<span class="list_right__light">Please log in below</span>-->
+                    <!--<form action="" class="list_right__form right_form">-->
+                        <!--<label for="email" class="right_form__email">EMAIL ADDRESS <span class="red">*</span></label>-->
+                        <!--<input type="text" id="email" class="right_form_email">-->
+                        <!--<label for="password" class="right_form__password">PASSWORD <span class="red">*</span></label>-->
+                        <!--<input type="text" id="password">-->
+                        <!--<span class="red right_form__required">* Required Fileds</span>-->
+                        <!--<div class="right_form__login form_login">-->
+                            <!--<a href="#" class="btn_empty_grey empty_hover_button list_right__login form_login__btn"-->
+                               <!--type="">Log in</a>-->
+                            <!--<span class="list_left__bold"><a href="#"-->
+                                                             <!--class="right_form__forgot">Forgot Password ?</a></span>-->
+                        <!--</div>-->
+                    <!--</form>-->
+
+                <!--</div>-->
             </div>
             <div class="check_list__separator"></div>
         </div>
         <div class="check_list">
             <h2>02. BILLING INFORMATION</h2>
+            <div class="check_list__container check list_container">
+                <div class="list_container__left list_left">
+
+                    <span class="list_left__bold">Check as a guest or register</span>
+                    <span class="list_left__light">Register with us for future convenience</span>
+
+                    <span class="list_left__bold">
+                    register and save time!
+                </span>
+                    <span class="list_left__light">
+Register with us for future convenience
+                </span>
+                    <span class="list_left__light marg-top">
+<i class="fas fa-angle-double-right"></i> Fast and easy checkout
+                </span>
+                    <span class="list_left__light">
+<i class="fas fa-angle-double-right"></i> Easy access to your order history and status
+                </span>
+                    <button class="btn_empty_grey empty_hover_button list_left__next" id="122">
+                        Continue
+                    </button>
+                    <button class="btn_empty_grey empty_hover_button list_left__back">
+                        Back
+                    </button>
+                </div>
+            </div>
+            <div class="check_list__separator"></div>
+        </div>
+        <div class="check_list">
+            <h2>03. SHIPPING INFORMATION</h2>
+            <div class="check_list__container check list_container">
             <div class="list_container__left list_left">
 
                 <span class="list_left__bold">Check as a guest or register</span>
@@ -259,23 +294,101 @@ Register with us for future convenience
                 <button class="btn_empty_grey empty_hover_button list_left__next">
                     Continue
                 </button>
+                <button class="btn_empty_grey empty_hover_button list_left__back">
+                    Back
+                </button>
             </div>
-            <div class="check_list__separator"></div>
         </div>
-        <div class="check_list">
-            <h2>03. SHIPPING INFORMATION</h2>
             <div class="check_list__separator"></div>
         </div>
         <div class="check_list">
             <h2>04. SHIPPING METHOD</h2>
+             <div class="check_list__container check list_container">
+            <div class="list_container__left list_left">
+
+                <span class="list_left__bold">Check as a guest or register</span>
+                <span class="list_left__light">Register with us for future convenience</span>
+
+                <span class="list_left__bold">
+                    register and save time!
+                </span>
+                <span class="list_left__light">
+Register with us for future convenience
+                </span>
+                <span class="list_left__light marg-top">
+<i class="fas fa-angle-double-right"></i> Fast and easy checkout
+                </span>
+                <span class="list_left__light">
+<i class="fas fa-angle-double-right"></i> Easy access to your order history and status
+                </span>
+                <button class="btn_empty_grey empty_hover_button list_left__next">
+                    Continue
+                </button>
+                <button class="btn_empty_grey empty_hover_button list_left__back">
+                    Back
+                </button>
+            </div>
+        </div>
             <div class="check_list__separator"></div>
         </div>
         <div class="check_list">
             <h2>05. PAYMENT METHOD</h2>
+             <div class="check_list__container check list_container">
+            <div class="list_container__left list_left">
+
+                <span class="list_left__bold">Check as a guest or register</span>
+                <span class="list_left__light">Register with us for future convenience</span>
+
+                <span class="list_left__bold">
+                    register and save time!
+                </span>
+                <span class="list_left__light">
+Register with us for future convenience
+                </span>
+                <span class="list_left__light marg-top">
+<i class="fas fa-angle-double-right"></i> Fast and easy checkout
+                </span>
+                <span class="list_left__light">
+<i class="fas fa-angle-double-right"></i> Easy access to your order history and status
+                </span>
+                <button class="btn_empty_grey empty_hover_button list_left__next">
+                    Continue
+                </button>
+                <button class="btn_empty_grey empty_hover_button list_left__back">
+                    Back
+                </button>
+            </div>
+        </div>
             <div class="check_list__separator"></div>
         </div>
         <div class="check_list">
             <h2>06. ORDER REVIEW</h2>
+             <div class="check_list__container check list_container">
+            <div class="list_container__left list_left">
+
+                <span class="list_left__bold">Check as a guest or register</span>
+                <span class="list_left__light">Register with us for future convenience</span>
+
+                <span class="list_left__bold">
+                    register and save time!
+                </span>
+                <span class="list_left__light">
+Register with us for future convenience
+                </span>
+                <span class="list_left__light marg-top">
+<i class="fas fa-angle-double-right"></i> Fast and easy checkout
+                </span>
+                <span class="list_left__light">
+<i class="fas fa-angle-double-right"></i> Easy access to your order history and status
+                </span>
+                <button class="btn_empty_grey empty_hover_button list_left__next">
+                    Continue
+                </button>
+                <button class="btn_empty_grey empty_hover_button list_left__back">
+                    Back
+                </button>
+            </div>
+        </div>
             <div class="check_list__separator"></div>
         </div>
 
@@ -421,20 +534,7 @@ a&nbsp;pulvinar purus condimentum&nbsp;a. Aliquam condimentum mattis neque sed p
         </div>
     </div>
 </footer>
-<script>
-    (function ($) {
-        $('#check1').click(function () {
-            $(this).children().addClass('check-active');
-            $('#check2').children().removeClass('check-active');
-        });
-        $('#check2').click(function () {
-            $(this).children().addClass('check-active');
-            $('#check1').children().removeClass('check-active');
-        });
-        $('.list_left__next').click(function () {
-            $('#check-one').slideUp('slow');
-        });
-    })(jQuery);
+<script src="js-script.js">
 </script>
 </body>
 </html>
