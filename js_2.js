@@ -70,7 +70,6 @@ function MenuItem(className, title, link ) {
 
     this.link = link;
     this.title = title;
-    this
 }
 
 MenuItem.prototype = Object.create(Container.prototype);
