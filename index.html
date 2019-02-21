@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/jquery-ui-dist/jquery-ui.js"></script>
     <script src="js-script.js"></script>
     <!--<script src="js-learn/test-6_1.js"></script>-->
     <script src="server.js"></script>
@@ -61,28 +62,83 @@
         </div>
     </div>
     <nav class="nav_back">
-        <ul class="menu" id="megaMenu">
-            <li>
-                <a href="index.html" class="menu_list">HOME</a>
-            </li>
+        <ul class="menu" id="Menu">
             <li class="mega_menu_link">
-                <a href="" class="menu_list">MAN</a>
+                <a href="index.html" class="menu_list">HOME</a>
 
             </li>
-            <li>
+            <li class="mega_menu_link">
+
+                <a href="" class="menu_list">MAN</a>
+                <div class="mega_menu_container">
+                    <div class="mega_container_inside">
+                        <div class="mega_menu_column" id="manMenu">
+                            <div class="mega_menu_title">
+                                MAN
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="mega_menu_link">
                 <a href="" class="menu_list">WOMEN</a>
+                <div class="mega_menu_container">
+                    <div class="mega_container_inside">
+                        <div class="mega_menu_column" id="womenMenu">
+                            <div class="mega_menu_title">
+                                Women
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <li>
+            <li class="mega_menu_link">
                 <a href="" class="menu_list">KIDS</a>
+                <div class="mega_menu_container">
+                    <div class="mega_container_inside">
+                        <div class="mega_menu_column" id="kidsMenu">
+                            <div class="mega_menu_title">
+                                KIDS
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <li>
+            <li class="mega_menu_link">
                 <a href="" class="menu_list">ACCOSERIESE</a>
+                <div class="mega_menu_container">
+                    <div class="mega_container_inside">
+                        <div class="mega_menu_column" id="accoserieseMenu">
+                            <div class="mega_menu_title">
+                                ACCOSERIESE
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <li>
+            <li class="mega_menu_link">
                 <a href="" class="menu_list">FEATURED</a>
+                <div class="mega_menu_container">
+                    <div class="mega_container_inside">
+                        <div class="mega_menu_column" id="featuredMenu">
+                            <div class="mega_menu_title">
+                                FEATURED
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <li>
+            <li class="mega_menu_link">
                 <a href="" class="menu_list">HOT DEALS</a>
+                <div class="mega_menu_container">
+                    <div class="mega_container_inside">
+                        <div class="mega_menu_column" id="hotMenu">
+                            <div class="mega_menu_title">
+                                HOT DEALS
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </li>
 
         </ul>
@@ -334,17 +390,10 @@ a&nbsp;pulvinar purus condimentum&nbsp;a. Aliquam condimentum mattis neque sed p
     </div>
 </footer>
 <script src="cart_empty.js"></script>
+<script src="menu_render.js"></script>
 <script src="js_2.js"></script>
 </body>
 <!--mega menu-->
-<div class="mega_menu_container">
-    <div class="mega_container_inside">
-        <div class="mega_menu_column" id="menu">
-            <div class="mega_menu_title">
-                Women
-            </div>
-        </div>
-    </div>
-</div>
+
 <!--mega menu end-->
 </html>

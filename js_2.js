@@ -130,46 +130,9 @@ window.onload = function () {
 
     var menu = new SubMenu('catalog', 'Mastery', item, '', 'Mastery');
 
+    var $menu = document.getElementById('womenMenu');
 
+    $menu.append(menu.render());
 
-    var $menu = document.getElementById('megaMenu');
-
-    var $menuContainer = document.createElement('div');
-    var $containerInside = document.createElement('div');
-    var $menuColumn = document.createElement('div');
-    var $menuTitle = document.createElement('div');
-
-    $menuContainer.classList.add('mega_menu_container');
-    $containerInside.classList.add('mega_container_inside');
-    $menuColumn.classList.add('mega_menu_column');
-    $menuTitle.classList.add('mega_menu_title');
-
-    $menuColumn.setAttribute('id', 'menu');
-    $menuTitle.innerText = 'Women';
-
-
-    $menuContainer.appendChild($containerInside);
-    $containerInside.appendChild($menuColumn);
-    $menuColumn.appendChild($menuTitle);
-
-    $menuColumn.appendChild(menu.render());
-
-    $menu.onmouseover = function (e) {
-        let target = e.target;
-        // проверяем наличие нужного класса у элемента
-        if (target.classList == 'menu_list') {
-             var parentTarget = target.parentNode;
-             parentTarget.appendChild($menuContainer);
-
-
-        }
-    };
-    $menu.onmouseout = function (e) {
-        let target = e.target;
-        if (target.classList == 'menu_list') {
-            var parentTarget = target.parentNode;
-            parentTarget.removeChild($menuContainer);
-        }
-    }
 
 };
