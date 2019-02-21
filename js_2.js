@@ -1,5 +1,3 @@
-
-
 // public, protected, private
 
 function Container(id, className, tagName) {
@@ -65,7 +63,7 @@ Menu.prototype.render = function () {
     return container;
 };
 
-function MenuItem(className, title, link ) {
+function MenuItem(className, title, link) {
     Container.call(this, '', className, 'li');
 
     this.link = link;
@@ -118,21 +116,60 @@ window.onload = function () {
         new MenuItem('Mega_menu_column_list', 'Blazers', '/Blazers'),
         new MenuItem('Mega_menu_column_list', 'Denim', '/Denim'),
         new MenuItem('Mega_menu_column_list', 'Accessories', '/Accessories')
-    //     new SubMenu('Shield', 'Boots and Shield', [
-    //         new MenuItem('/boots', 'Boots'),
-    //         new MenuItem('/shields', 'Shields'),
-    //         new SubMenu('/sword', 'Sword', [
-    //             new MenuItem('/One-hand', 'One-hand'),
-    //             new MenuItem('/two-hand', 'Two-hand'),
-    //         ], 'Одноручные или двуручные', '/1111'),
-    //
-    //
-    //     ], 'Ботинки и Щиты', '/222'),
+        //     new SubMenu('Shield', 'Boots and Shield', [
+        //         new MenuItem('/boots', 'Boots'),
+        //         new MenuItem('/shields', 'Shields'),
+        //         new SubMenu('/sword', 'Sword', [
+        //             new MenuItem('/One-hand', 'One-hand'),
+        //             new MenuItem('/two-hand', 'Two-hand'),
+        //         ], 'Одноручные или двуручные', '/1111'),
+        //
+        //
+        //     ], 'Ботинки и Щиты', '/222'),
     ];
 
     var menu = new SubMenu('catalog', 'Mastery', item, '', 'Mastery');
 
-    newMenu.appendChild(menu.render());
 
+
+    var $menu = document.getElementById('megaMenu');
+
+    var $menuContainer = document.createElement('div');
+    var $containerInside = document.createElement('div');
+    var $menuColumn = document.createElement('div');
+    var $menuTitle = document.createElement('div');
+
+    $menuContainer.classList.add('mega_menu_container');
+    $containerInside.classList.add('mega_container_inside');
+    $menuColumn.classList.add('mega_menu_column');
+    $menuTitle.classList.add('mega_menu_title');
+
+    $menuColumn.setAttribute('id', 'menu');
+    $menuTitle.innerText = 'Women';
+
+
+    $menuContainer.appendChild($containerInside);
+    $containerInside.appendChild($menuColumn);
+    $menuColumn.appendChild($menuTitle);
+
+    $menuColumn.appendChild(menu.render());
+
+    $menu.onmouseover = function (e) {
+        let target = e.target;
+        // проверяем наличие нужного класса у элемента
+        if (target.classList == 'menu_list') {
+             var parentTarget = target.parentNode;
+             parentTarget.appendChild($menuContainer);
+
+
+        }
+    };
+    $menu.onmouseout = function (e) {
+        let target = e.target;
+        if (target.classList == 'menu_list') {
+            var parentTarget = target.parentNode;
+            parentTarget.removeChild($menuContainer);
+        }
+    }
 
 };
