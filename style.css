@@ -54,6 +54,9 @@ header {
   letter-spacing: 0.35px;
   cursor: pointer; }
 
+.btn_browse:hover .browse_drop_menu {
+  display: block; }
+
 .caret {
   padding-left: 5px; }
 
@@ -98,7 +101,8 @@ header {
   height: auto;
   border-radius: 5px;
   background-color: #ffffff;
-  border: #ececec solid 1px; }
+  border: #ececec solid 1px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08); }
   .card_product__totalPrice {
     display: flex;
     justify-content: space-between;
@@ -1492,7 +1496,8 @@ a, a:hover, a:visited {
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: Lato-Black, sans-serif; }
+  font-family: Lato-Black, sans-serif;
+  margin-bottom: 13px; }
 
 .banner_text_l2 {
   font-family: Lato-Black, sans-serif;
@@ -1788,5 +1793,62 @@ details[open] > summary::after {
 .pink_button_hover:hover {
   color: #ffffff;
   background-color: #ef5b70; }
+
+.browse_drop_menu {
+  display: none;
+  position: absolute;
+  top: 39px;
+  left: 0;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: #ececec solid 1px;
+  z-index: 1;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08); }
+
+.menu_content {
+  text-align: initial;
+  box-sizing: border-box;
+  padding: 16px; }
+  .menu_content__title {
+    color: #232323;
+    margin: 0;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: uppercase;
+    letter-spacing: 0.35px; }
+  .menu_content__separator {
+    width: 236px;
+    height: 1px;
+    background-color: #e8e8e8; }
+
+.list_ul {
+  margin-block-start: 0;
+  padding-inline-start: 0;
+  color: #4f4f4f;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.35px;
+  box-sizing: border-box;
+  padding-left: 4px;
+  padding-top: 16px; }
+
+.before::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  left: 64px;
+  top: -7px;
+  transform: rotate(45deg);
+  border-left: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8; }
 
 /*# sourceMappingURL=style.css.map */
